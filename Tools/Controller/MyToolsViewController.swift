@@ -287,6 +287,11 @@ extension MyToolsViewController : UICollectionViewDelegate,UICollectionViewDataS
             toolVC.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(toolVC, animated: true)
             break
+        case 26:
+            let toolVC = AwemeViewController()
+            toolVC.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(toolVC, animated: true)
+            break
         default:
             view.makeToast("未完成的功能")
             break
@@ -373,6 +378,9 @@ extension MyToolsViewController : UICollectionViewDelegate,UICollectionViewDataS
             return toolVC
         case 25:
             let toolVC = InkeViewController()
+            return toolVC
+        case 25:
+            let toolVC = AwemeViewController()
             return toolVC
         default:
             view.makeToast("未完成的功能")

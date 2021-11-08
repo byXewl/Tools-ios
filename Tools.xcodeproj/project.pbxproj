@@ -558,7 +558,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CB537126CB9D3C00392961 /* ChelaileDetailViewController.swift in Sources */,
-				0464B182262EA9C80019ED4B /* FDDefine.swift in Sources */,
 				048D59852625272500628F78 /* BaseNavigationController.swift in Sources */,
 				04A93ED8262818F4006C9773 /* ToolDetailViewController.swift in Sources */,
 				049A5DDC26C35A2E0023968C /* CalculatorButton.swift in Sources */,
@@ -623,7 +622,6 @@
 				04BE545826B283AA00B64825 /* NewToolItemCell.swift in Sources */,
 				049420A9263002FA0088ADCE /* WiFiShareViewController.swift in Sources */,
 				04888C0A26DCB542002B69CA /* InkeViewController.swift in Sources */,
-				04B1C846262974E9005EDBCB /* FDNetwork.swift in Sources */,
 				04995C472633B91C00642205 /* BilibiliCoverViewController.swift in Sources */,
 				0472F0F026C2759F001C9705 /* DecibelMeterViewController.swift in Sources */,
 				048D5979262524C600628F78 /* MyToolsViewController.swift in Sources */,
@@ -787,7 +785,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Tools/Tools.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20210925;
+				CURRENT_PROJECT_VERSION = 20211108;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = F9N98X7P4L;
 				INFOPLIST_FILE = Tools/Info.plist;
@@ -812,7 +810,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Tools/Tools.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20210925;
+				CURRENT_PROJECT_VERSION = 20211108;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = F9N98X7P4L;
 				INFOPLIST_FILE = Tools/Info.plist;
