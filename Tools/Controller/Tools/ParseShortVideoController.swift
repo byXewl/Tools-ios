@@ -7,9 +7,11 @@
 
 import UIKit
 import AVKit
-import Toast_Swift
+import Toast
 import Alamofire
 import GoogleMobileAds
+import FDNetwork
+import FDFoundation
 
 class ParseShortVideoController: BaseViewController {
     
@@ -24,7 +26,7 @@ class ParseShortVideoController: BaseViewController {
         
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(FD_TopHeight)
+            make.top.equalToSuperview().offset(CGFloat.topHeight)
             make.left.equalToSuperview().offset(15)
             make.right.equalToSuperview().offset(-15)
             make.bottom.equalToSuperview()
@@ -33,13 +35,13 @@ class ParseShortVideoController: BaseViewController {
         textView.snp.makeConstraints { (make) in
             make.top.left.equalToSuperview()
             make.height.equalTo(80)
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
         }
         
         scrollView.addSubview(parseBtn)
         parseBtn.snp.makeConstraints { (make) in
             make.left.equalToSuperview()
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
             make.top.equalTo(self.textView.snp.bottom).offset(15)
             make.height.equalTo(40)
         }
@@ -76,7 +78,7 @@ class ParseShortVideoController: BaseViewController {
             saveVideoBtn.snp.makeConstraints { (make) in
                 make.left.equalToSuperview()
                 make.height.equalTo(40)
-                make.width.equalTo(FD_ScreenWidth - 30)
+                make.width.equalTo(CGFloat.screenW - 30)
                 make.top.equalTo(self.parseBtn.snp.bottom).offset(30 + (UIScreen.main.bounds.size.width - 30) * 9 / 16)
             }
             scrollView.addSubview(bannerView)
@@ -99,7 +101,8 @@ class ParseShortVideoController: BaseViewController {
         let url = textView.text.getUrls().first ?? ""
 //        http://api.tools.app.xiaobingkj.com/parseVideo.php?url=http://v.douyin.com/eMKj42N/
         FDNetwork.GET(url: "http://api.tools.app.xiaobingkj.com/parseVideo.php", param: ["url":url], success: { (result) in
-            let model = ParseShortVideoModel.deserialize(from: result) ?? ParseShortVideoModel()
+            let resultDict = result as! [String: Any]
+            let model = ParseShortVideoModel.deserialize(from: resultDict) ?? ParseShortVideoModel()
             self.model = model
             if model.code == 200 {
                 //解析成功
@@ -170,8 +173,8 @@ class ParseShortVideoController: BaseViewController {
     
     lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
-        scrollView.contentSize = CGSize(width: 0, height: (UIScreen.main.bounds.size.width - 30) * 9 / 16 + 40 + 80 + 40 + 40 + 4 * 15 + 50 + FD_SafeAreaBottomHeight)
-        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -FD_SafeAreaBottomHeight, right: 0)
+        scrollView.contentSize = CGSize(width: 0, height: (UIScreen.main.bounds.size.width - 30) * 9 / 16 + 40 + 80 + 40 + 40 + 4 * 15 + 50 + CGFloat.safeAreaBottomHeight)
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -CGFloat.safeAreaBottomHeight, right: 0)
         return scrollView
     }()
 

@@ -9,6 +9,7 @@ import UIKit
 import WebKit
 import AVKit
 import MarkdownView
+import FDUIKit
 
 class ToolDetailViewController: BaseViewController {
     var model = ToolModel()
@@ -24,11 +25,11 @@ class ToolDetailViewController: BaseViewController {
         view.addSubview(mdView)
         mdView.snp.makeConstraints { (make) in
             make.top.left.right.equalToSuperview()
-            make.bottom.equalToSuperview().offset(-FD_TabBarHeight)
+            make.bottom.equalToSuperview().offset(-CGFloat.tabBarHeight)
         }
         view.addSubview(operateBtn)
         operateBtn.snp.makeConstraints { make in
-            make.bottom.equalToSuperview().offset(-FD_SafeAreaBottomHeight)
+            make.bottom.equalToSuperview().offset(-CGFloat.safeAreaBottomHeight)
             make.height.equalTo(44)
             make.left.equalToSuperview().offset(15)
             make.right.equalToSuperview().offset(-15)

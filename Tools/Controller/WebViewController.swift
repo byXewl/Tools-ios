@@ -8,6 +8,7 @@
 import UIKit
 import WebKit
 import SwViewCapture
+import FDUIKit
 
 class WebViewController: BaseViewController {
     lazy var isShare = false
@@ -63,7 +64,7 @@ class WebViewController: BaseViewController {
     override func upView() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "截图", style: .plain, target: self, action: #selector(captureBtnAction))
         view.addSubview(webView)
-        webView.frame = CGRect(x: 0, y: FD_TopHeight, width: FD_ScreenWidth, height: FD_ScreenHeight)
+        webView.frame = CGRect(x: 0, y: .topHeight, width: .screenW, height: .screenH)
     }
     
     @objc func captureBtnAction(){

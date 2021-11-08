@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FDNetwork
 
 class PhoneViewController: BaseViewController {
     
@@ -18,7 +19,7 @@ class PhoneViewController: BaseViewController {
         title = "手机号归属地查询"
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(FD_TopHeight)
+            make.top.equalToSuperview().offset(CGFloat.topHeight)
             make.left.equalToSuperview()
             make.right.equalToSuperview()
             make.bottom.equalToSuperview()
@@ -28,13 +29,13 @@ class PhoneViewController: BaseViewController {
             make.top.equalToSuperview()
             make.left.equalToSuperview().offset(15)
             make.height.equalTo(40)
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
         }
         
         scrollView.addSubview(queryBtn)
         queryBtn.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(15)
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
             make.top.equalTo(self.textField.snp.bottom).offset(15)
             make.height.equalTo(40)
         }
@@ -75,12 +76,13 @@ class PhoneViewController: BaseViewController {
         textField.resignFirstResponder()
         view.makeToastActivity(.center)
         FDNetwork.GET(url: api_phone, param: ["key":api_phone_key,"phone":textField.text!]) { (result) in
-            self.responseModel = JuHePhoneResponseModel.deserialize(from: result) ?? JuHePhoneResponseModel()
+            let resultDict = result as! [String: Any]
+            self.responseModel = JuHePhoneResponseModel.deserialize(from: resultDict) ?? JuHePhoneResponseModel()
             if !self.scrollView.subviews.contains(self.tableView){
                 self.scrollView.addSubview(self.tableView)
                 self.tableView.snp.makeConstraints { (make) in
                     make.left.equalToSuperview()
-                    make.width.equalTo(FD_ScreenWidth)
+                    make.width.equalTo(CGFloat.screenW)
                     make.top.equalTo(self.queryBtn.snp.bottom).offset(15)
                     make.height.equalTo(self.responseResultArray.count * 44)
                 }
@@ -144,7 +146,7 @@ class PhoneViewController: BaseViewController {
     lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
         scrollView.contentSize = CGSize(width: 0, height: 40 + 15)
-        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -FD_SafeAreaBottomHeight, right: 0)
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -CGFloat.safeAreaBottomHeight, right: 0)
         return scrollView
     }()
 

@@ -14,5 +14,6 @@
 
 #import "DDSoundWaveView.h"
 #import "AudioRecorder.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #endif /* Tools_Bridging_Header_h_h */

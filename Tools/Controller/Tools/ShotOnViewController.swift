@@ -20,7 +20,7 @@ class ShotOnViewController: BaseViewController {
         title = "相机水印"
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(FD_TopHeight)
+            make.top.equalToSuperview().offset(CGFloat.topHeight)
             make.left.equalToSuperview().offset(15)
             make.right.equalToSuperview().offset(-15)
             make.bottom.equalToSuperview()
@@ -28,7 +28,7 @@ class ShotOnViewController: BaseViewController {
         scrollView.addSubview(selectBtn)
         selectBtn.snp.makeConstraints { (make) in
             make.left.equalToSuperview()
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
             make.top.equalToSuperview()
             make.height.equalTo(40)
         }
@@ -234,8 +234,8 @@ class ShotOnViewController: BaseViewController {
     
     lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
-        scrollView.contentSize = CGSize(width: 0, height: (FD_ScreenWidth - 30) * 9 / 16 + 40 + 40 + 2 * 15 + FD_SafeAreaBottomHeight)
-        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -FD_SafeAreaBottomHeight, right: 0)
+        scrollView.contentSize = CGSize(width: 0, height: (CGFloat.screenW - 30) * 9 / 16 + 40 + 40 + 2 * 15 + CGFloat.safeAreaBottomHeight)
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -CGFloat.safeAreaBottomHeight, right: 0)
         return scrollView
     }()
 
@@ -250,8 +250,8 @@ extension ShotOnViewController : UIImagePickerControllerDelegate,UINavigationCon
             scrollView.addSubview(imageView)
             imageView.snp.makeConstraints { (make) in
                 make.left.equalToSuperview()
-                make.width.equalTo(FD_ScreenWidth - 30)
-                make.height.equalTo((FD_ScreenWidth - 30) * 4 / 3)
+                make.width.equalTo(CGFloat.screenW - 30)
+                make.height.equalTo((CGFloat.screenW - 30) * 4 / 3)
                 make.top.equalTo(self.selectBtn.snp.bottom).offset(15)
             }
             scrollView.addSubview(shotOnBtn)
@@ -259,19 +259,19 @@ extension ShotOnViewController : UIImagePickerControllerDelegate,UINavigationCon
                 make.left.equalToSuperview()
                 make.top.equalTo(self.imageView.snp.bottom).offset(15)
                 make.height.equalTo(40)
-                make.width.equalTo((FD_ScreenWidth - 30 - 15)/2)
+                make.width.equalTo((CGFloat.screenW - 30 - 15)/2)
             }
             scrollView.addSubview(fromBtn)
             fromBtn.snp.makeConstraints { (make) in
                 make.left.equalTo(self.shotOnBtn.snp.right).offset(15)
                 make.top.equalTo(self.imageView.snp.bottom).offset(15)
                 make.height.equalTo(40)
-                make.width.equalTo((FD_ScreenWidth - 30 - 15)/2)
+                make.width.equalTo((CGFloat.screenW - 30 - 15)/2)
             }
             scrollView.addSubview(saveImageBtn)
             saveImageBtn.snp.makeConstraints { (make) in
                 make.left.equalToSuperview()
-                make.width.equalTo(FD_ScreenWidth - 30)
+                make.width.equalTo(CGFloat.screenW - 30)
                 make.height.equalTo(40)
                 make.top.equalTo(self.fromBtn.snp.bottom).offset(15)
             }

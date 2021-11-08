@@ -7,6 +7,7 @@
 
 import UIKit
 import UnsplashPhotoPicker
+import FDUIKit
 
 class UnsplashDetailViewController: BaseViewController {
     
@@ -21,9 +22,9 @@ class UnsplashDetailViewController: BaseViewController {
         view.addSubview(imageView)
         imageView.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(0)
-            make.top.equalToSuperview().offset(FD_NavigationHeight + 15)
-            make.height.equalTo(FD_ScreenHeight - 200)
-            make.width.equalTo(FD_ScreenWidth)
+            make.top.equalToSuperview().offset(CGFloat.navigationBarHeight + 15)
+            make.height.equalTo(CGFloat.screenH - 200)
+            make.width.equalTo(CGFloat.screenW)
         }
         view.addSubview(iconImageView)
         iconImageView.snp.makeConstraints { (make) in
@@ -37,8 +38,8 @@ class UnsplashDetailViewController: BaseViewController {
             make.left.equalTo(self.iconImageView.snp.right).offset(10)
             make.centerY.equalTo(self.iconImageView)
         }
-        imageView.kf.setImage(with: photo?.urls[.raw]?.absoluteURL)
-        iconImageView.kf.setImage(with: photo?.user.profileImage[.medium])
+        imageView.sd_setImage(with: photo?.urls[.raw]?.absoluteURL, completed: nil)
+        iconImageView.sd_setImage(with: photo?.user.profileImage[.medium], completed: nil)
         nameLabel.text = photo?.user.name
     }
     

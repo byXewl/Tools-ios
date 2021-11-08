@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FDNetwork
 
 class NewToolViewController: BaseViewController {
     
@@ -48,7 +49,8 @@ class NewToolViewController: BaseViewController {
             if self.page == 1{
                 self.dataArray.removeAll()
             }
-            let dataDict = result["data"] as! [String:Any]
+            let resultDict = result as! [String: Any]
+            let dataDict = resultDict["data"] as! [String:Any]
             let items = dataDict["items"] as! [[String: Any]]
             for item in items{
                 let model = ToolModel.deserialize(from: item) ?? ToolModel()
@@ -128,8 +130,8 @@ extension NewToolViewController: UICollectionViewDelegate,UICollectionViewDataSo
         let model = dataArray[indexPath.item]
         let nameStr = model.name as NSString
         let contentStr = model.content as NSString
-        let height = nameStr.boundingRect(with: CGSize(width: FD_ScreenWidth - 60, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, attributes: [.font: UIFont.systemFont(ofSize: 17, weight: .medium)], context: nil).height + contentStr.boundingRect(with: CGSize(width: FD_ScreenWidth - 60, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, attributes: [.font: UIFont.systemFont(ofSize: 13)], context: nil).height + 35
-        return CGSize(width: FD_ScreenWidth - 30, height: height)
+        let height = nameStr.boundingRect(with: CGSize(width: CGFloat.screenW - 60, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, attributes: [.font: UIFont.systemFont(ofSize: 17, weight: .medium)], context: nil).height + contentStr.boundingRect(with: CGSize(width: CGFloat.screenW - 60, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, attributes: [.font: UIFont.systemFont(ofSize: 13)], context: nil).height + 35
+        return CGSize(width: CGFloat.screenW - 30, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

@@ -7,9 +7,11 @@
 
 import UIKit
 import AVKit
-import Toast_Swift
+import Toast
 import Alamofire
 import GoogleMobileAds
+import FDNetwork
+import FDFoundation
 
 class BilibiliVideoViewController: BaseViewController {
     
@@ -26,7 +28,7 @@ class BilibiliVideoViewController: BaseViewController {
         
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(FD_TopHeight)
+            make.top.equalToSuperview().offset(CGFloat.topHeight)
             make.left.equalToSuperview().offset(15)
             make.right.equalToSuperview().offset(-15)
             make.bottom.equalToSuperview()
@@ -35,13 +37,13 @@ class BilibiliVideoViewController: BaseViewController {
         textView.snp.makeConstraints { (make) in
             make.top.left.equalToSuperview()
             make.height.equalTo(80)
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
         }
         
         scrollView.addSubview(parseBtn)
         parseBtn.snp.makeConstraints { (make) in
             make.left.equalToSuperview()
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
             make.top.equalTo(self.textView.snp.bottom).offset(15)
             make.height.equalTo(40)
         }
@@ -79,7 +81,7 @@ class BilibiliVideoViewController: BaseViewController {
     func addVideoView(){
         if !(scrollView.subviews.contains(containerView)) {
             scrollView.addSubview(containerView)
-            containerView.frame = CGRect(x: 0, y: 150, width: FD_ScreenWidth - 30, height: (UIScreen.main.bounds.size.width - 30) * 9 / 16)
+            containerView.frame = CGRect(x: 0, y: 150, width: CGFloat.screenW - 30, height: (UIScreen.main.bounds.size.width - 30) * 9 / 16)
             containerView.addSubview(playVideoBtn)
             playVideoBtn.snp.makeConstraints { (make) in
                 make.center.equalTo(self.containerView)
@@ -91,7 +93,7 @@ class BilibiliVideoViewController: BaseViewController {
             saveVideoBtn.snp.makeConstraints { (make) in
                 make.left.equalToSuperview()
                 make.height.equalTo(40)
-                make.width.equalTo(FD_ScreenWidth - 30)
+                make.width.equalTo(CGFloat.screenW - 30)
                 make.top.equalTo(self.parseBtn.snp.bottom).offset(30 + (UIScreen.main.bounds.size.width - 30) * 9 / 16)
             }
             scrollView.addSubview(bannerView)
@@ -120,7 +122,8 @@ class BilibiliVideoViewController: BaseViewController {
             param["av"] = avbv
         }
         FDNetwork.GET(url: "https://api.injahow.cn/bparse/", param: param, success: { (result) in
-            let model = BilibiliVideoModel.deserialize(from: result) ?? BilibiliVideoModel()
+            let resultDict = result as! [String: Any]
+            let model = BilibiliVideoModel.deserialize(from: resultDict) ?? BilibiliVideoModel()
             self.model = model
             //解析成功
             if model.code == 0{
@@ -191,8 +194,8 @@ class BilibiliVideoViewController: BaseViewController {
     
     lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
-        scrollView.contentSize = CGSize(width: 0, height: (UIScreen.main.bounds.size.width - 30) * 9 / 16 + 40 + 80 + 40 + 40 + 4 * 15 + 50 + FD_SafeAreaBottomHeight)
-        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -FD_SafeAreaBottomHeight, right: 0)
+        scrollView.contentSize = CGSize(width: 0, height: (UIScreen.main.bounds.size.width - 30) * 9 / 16 + 40 + 80 + 40 + 40 + 4 * 15 + 50 + CGFloat.safeAreaBottomHeight)
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -CGFloat.safeAreaBottomHeight, right: 0)
         return scrollView
     }()
 

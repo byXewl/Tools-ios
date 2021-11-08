@@ -33,7 +33,7 @@ class QRCodeScanViewController: BaseViewController {
     }
     
     lazy var bgView : UIView = {
-        let bgView = UIView(frame: CGRect(x: 15, y: FD_StatusBarHeight + FD_LargeTitleHeight, width: FD_ScreenWidth - 30, height: FD_ScreenWidth - 30))
+        let bgView = UIView(frame: CGRect(x: 15, y: .statusBarHeight + .largeNavigationTitleHeight, width: CGFloat.screenW - 30, height: CGFloat.screenW - 30))
         return bgView
     }()
     
@@ -42,7 +42,7 @@ class QRCodeScanViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "UITableViewCell")
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: FD_SafeAreaBottomHeight, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: CGFloat.safeAreaBottomHeight, right: 0)
         return tableView
     }()
     
@@ -88,7 +88,7 @@ extension QRCodeScanViewController : AVCaptureMetadataOutputObjectsDelegate{
                     make.left.equalToSuperview()
                     make.top.equalTo(self.bgView.snp.bottom).offset(15)
                     make.bottom.equalToSuperview()
-                    make.width.equalTo(FD_ScreenWidth)
+                    make.width.equalTo(CGFloat.screenW)
                 }
             }
             let result = metadataObjects.first as! AVMetadataMachineReadableCodeObject

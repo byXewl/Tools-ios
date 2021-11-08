@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,6 @@
 		0451458626A805C40090AFBA /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0451458526A805C40090AFBA /* AppModel.swift */; };
 		0462AA1A2634F10F0051995D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0462AA192634F10F0051995D /* GoogleService-Info.plist */; };
 		0464B17F262E7C150019ED4B /* QRCodeGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0464B17E262E7C150019ED4B /* QRCodeGenerateViewController.swift */; };
-		0464B182262EA9C80019ED4B /* FDDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0464B181262EA9C80019ED4B /* FDDefine.swift */; };
 		046B19332631429A00D5D475 /* OCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B19322631429A00D5D475 /* OCRViewController.swift */; };
 		0472F0F026C2759F001C9705 /* DecibelMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472F0EF26C2759F001C9705 /* DecibelMeterViewController.swift */; };
 		047553EF26325FD1001087D7 /* IPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047553EE26325FD1001087D7 /* IPViewController.swift */; };
@@ -63,7 +62,6 @@
 		04A93ED8262818F4006C9773 /* ToolDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A93ED7262818F4006C9773 /* ToolDetailViewController.swift */; };
 		04AACAF32655EA6D003C17E7 /* String+FD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AACAF22655EA6D003C17E7 /* String+FD.swift */; };
 		04B1C83426296BE5005EDBCB /* ParseShortVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1C83326296BE5005EDBCB /* ParseShortVideoController.swift */; };
-		04B1C846262974E9005EDBCB /* FDNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1C845262974E9005EDBCB /* FDNetwork.swift */; };
 		04B1C8492629765B005EDBCB /* ParseShortVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1C8482629765B005EDBCB /* ParseShortVideoModel.swift */; };
 		04BE545626B278D100B64825 /* NewToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE545526B278D100B64825 /* NewToolViewController.swift */; };
 		04BE545826B283AA00B64825 /* NewToolItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE545726B283AA00B64825 /* NewToolItemCell.swift */; };
@@ -71,6 +69,12 @@
 		04D0E40A264CB08400E45843 /* WebpageShotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0E409264CB08400E45843 /* WebpageShotViewController.swift */; };
 		04D0E40D264CB22200E45843 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0E40C264CB22200E45843 /* WebViewController.swift */; };
 		8B3A2194BDA724F19F7DC8D4 /* Pods_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7A5A17F50E9D36BED15AE2 /* Pods_Tools.framework */; };
+		CB2D6838273815CC0016F247 /* FDFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = CB2D6837273815CC0016F247 /* FDFoundation */; };
+		CB2D683B273815DD0016F247 /* FDUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = CB2D683A273815DD0016F247 /* FDUIKit */; };
+		CB2D683E273815EB0016F247 /* FDNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = CB2D683D273815EB0016F247 /* FDNetwork */; };
+		CB2D68412738162B0016F247 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = CB2D68402738162B0016F247 /* Toast */; };
+		CB2D68432738170F0016F247 /* AwemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D68422738170F0016F247 /* AwemeModel.swift */; };
+		CB2D6845273817A10016F247 /* AwemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D6844273817A10016F247 /* AwemeViewController.swift */; };
 		CB422BE326C3F82C0090D9FA /* CurrencyConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB422BE226C3F82C0090D9FA /* CurrencyConverterViewController.swift */; };
 		CB422BE526C3F9A70090D9FA /* CurrencyConverterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB422BE426C3F9A70090D9FA /* CurrencyConverterModel.swift */; };
 /* End PBXBuildFile section */
@@ -91,7 +95,6 @@
 		0451458526A805C40090AFBA /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		0462AA192634F10F0051995D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0464B17E262E7C150019ED4B /* QRCodeGenerateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerateViewController.swift; sourceTree = "<group>"; };
-		0464B181262EA9C80019ED4B /* FDDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDDefine.swift; sourceTree = "<group>"; };
 		046B19322631429A00D5D475 /* OCRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRViewController.swift; sourceTree = "<group>"; };
 		0472F0EF26C2759F001C9705 /* DecibelMeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecibelMeterViewController.swift; sourceTree = "<group>"; };
 		047553EE26325FD1001087D7 /* IPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPViewController.swift; sourceTree = "<group>"; };
@@ -141,7 +144,6 @@
 		04A93ED7262818F4006C9773 /* ToolDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolDetailViewController.swift; sourceTree = "<group>"; };
 		04AACAF22655EA6D003C17E7 /* String+FD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FD.swift"; sourceTree = "<group>"; };
 		04B1C83326296BE5005EDBCB /* ParseShortVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseShortVideoController.swift; sourceTree = "<group>"; };
-		04B1C845262974E9005EDBCB /* FDNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDNetwork.swift; sourceTree = "<group>"; };
 		04B1C8482629765B005EDBCB /* ParseShortVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseShortVideoModel.swift; sourceTree = "<group>"; };
 		04BE545526B278D100B64825 /* NewToolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToolViewController.swift; sourceTree = "<group>"; };
 		04BE545726B283AA00B64825 /* NewToolItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToolItemCell.swift; sourceTree = "<group>"; };
@@ -151,6 +153,8 @@
 		3A91064668C4DE3440D969AD /* Pods-Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.debug.xcconfig"; path = "Target Support Files/Pods-Tools/Pods-Tools.debug.xcconfig"; sourceTree = "<group>"; };
 		8E7A5A17F50E9D36BED15AE2 /* Pods_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EF2C540199B83CDEE38334 /* Pods-Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.release.xcconfig"; path = "Target Support Files/Pods-Tools/Pods-Tools.release.xcconfig"; sourceTree = "<group>"; };
+		CB2D68422738170F0016F247 /* AwemeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwemeModel.swift; sourceTree = "<group>"; };
+		CB2D6844273817A10016F247 /* AwemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwemeViewController.swift; sourceTree = "<group>"; };
 		CB422BE226C3F82C0090D9FA /* CurrencyConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewController.swift; sourceTree = "<group>"; };
 		CB422BE426C3F9A70090D9FA /* CurrencyConverterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,8 +164,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2D68412738162B0016F247 /* Toast in Frameworks */,
+				CB2D6838273815CC0016F247 /* FDFoundation in Frameworks */,
 				8B3A2194BDA724F19F7DC8D4 /* Pods_Tools.framework in Frameworks */,
 				0494207F262FB44A0088ADCE /* CloudKit.framework in Frameworks */,
+				CB2D683E273815EB0016F247 /* FDNetwork in Frameworks */,
+				CB2D683B273815DD0016F247 /* FDUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +285,7 @@
 		04A93DFE2627F027006C9773 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CB2D68422738170F0016F247 /* AwemeModel.swift */,
 				0451458526A805C40090AFBA /* AppModel.swift */,
 				048D599C26256CB300628F78 /* ToolModel.swift */,
 				04B1C8482629765B005EDBCB /* ParseShortVideoModel.swift */,
@@ -313,6 +322,7 @@
 				04D0E409264CB08400E45843 /* WebpageShotViewController.swift */,
 				04249ACF26B0FCC400BDB65A /* BilibiliVideoViewController.swift */,
 				CB422BE226C3F82C0090D9FA /* CurrencyConverterViewController.swift */,
+				CB2D6844273817A10016F247 /* AwemeViewController.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -320,8 +330,6 @@
 		04B1C837262970E9005EDBCB /* FD */ = {
 			isa = PBXGroup;
 			children = (
-				0464B181262EA9C80019ED4B /* FDDefine.swift */,
-				04B1C845262974E9005EDBCB /* FDNetwork.swift */,
 				04AACAF22655EA6D003C17E7 /* String+FD.swift */,
 			);
 			path = FD;
@@ -365,6 +373,12 @@
 			dependencies = (
 			);
 			name = Tools;
+			packageProductDependencies = (
+				CB2D6837273815CC0016F247 /* FDFoundation */,
+				CB2D683A273815DD0016F247 /* FDUIKit */,
+				CB2D683D273815EB0016F247 /* FDNetwork */,
+				CB2D68402738162B0016F247 /* Toast */,
+			);
 			productName = Tools;
 			productReference = 048D595326251F8100628F78 /* Tools.app */;
 			productType = "com.apple.product-type.application";
@@ -393,6 +407,12 @@
 				"zh-Hans",
 			);
 			mainGroup = 048D594A26251F8100628F78;
+			packageReferences = (
+				CB2D6836273815CC0016F247 /* XCRemoteSwiftPackageReference "FDFoundation" */,
+				CB2D6839273815DD0016F247 /* XCRemoteSwiftPackageReference "FDUIKit" */,
+				CB2D683C273815EB0016F247 /* XCRemoteSwiftPackageReference "FDNetwork" */,
+				CB2D683F2738162B0016F247 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 048D595426251F8100628F78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -502,7 +522,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0464B182262EA9C80019ED4B /* FDDefine.swift in Sources */,
 				048D59852625272500628F78 /* BaseNavigationController.swift in Sources */,
 				04A93ED8262818F4006C9773 /* ToolDetailViewController.swift in Sources */,
 				049A5DDC26C35A2E0023968C /* CalculatorButton.swift in Sources */,
@@ -545,6 +564,7 @@
 				04A93DF12627E781006C9773 /* ToolItemCell.swift in Sources */,
 				04866EBC264E4CFF00EC6E9D /* NotificationListViewController.swift in Sources */,
 				04249AD226B0FD1200BDB65A /* BilibiliVideoModel.swift in Sources */,
+				CB2D68432738170F0016F247 /* AwemeModel.swift in Sources */,
 				04B1C83426296BE5005EDBCB /* ParseShortVideoController.swift in Sources */,
 				049A5DDA26C35A2E0023968C /* UIColor+.swift in Sources */,
 				04D0E40A264CB08400E45843 /* WebpageShotViewController.swift in Sources */,
@@ -553,9 +573,9 @@
 				04BE545A26B28B1400B64825 /* NewToolAddViewController.swift in Sources */,
 				04786CA126C3C7A8004EC77D /* DDSoundWaveView.m in Sources */,
 				04D0E40D264CB22200E45843 /* WebViewController.swift in Sources */,
+				CB2D6845273817A10016F247 /* AwemeViewController.swift in Sources */,
 				04BE545826B283AA00B64825 /* NewToolItemCell.swift in Sources */,
 				049420A9263002FA0088ADCE /* WiFiShareViewController.swift in Sources */,
-				04B1C846262974E9005EDBCB /* FDNetwork.swift in Sources */,
 				04995C472633B91C00642205 /* BilibiliCoverViewController.swift in Sources */,
 				0472F0F026C2759F001C9705 /* DecibelMeterViewController.swift in Sources */,
 				048D5979262524C600628F78 /* MyToolsViewController.swift in Sources */,
@@ -785,6 +805,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB2D6836273815CC0016F247 /* XCRemoteSwiftPackageReference "FDFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/fandongtongxue_admin/FDFoundation.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CB2D6839273815DD0016F247 /* XCRemoteSwiftPackageReference "FDUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/fandongtongxue_admin/FDUIKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CB2D683C273815EB0016F247 /* XCRemoteSwiftPackageReference "FDNetwork" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/fandongtongxue_admin/FDNetwork.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CB2D683F2738162B0016F247 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/fandongtongxue_admin/Toast-Swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB2D6837273815CC0016F247 /* FDFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB2D6836273815CC0016F247 /* XCRemoteSwiftPackageReference "FDFoundation" */;
+			productName = FDFoundation;
+		};
+		CB2D683A273815DD0016F247 /* FDUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB2D6839273815DD0016F247 /* XCRemoteSwiftPackageReference "FDUIKit" */;
+			productName = FDUIKit;
+		};
+		CB2D683D273815EB0016F247 /* FDNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB2D683C273815EB0016F247 /* XCRemoteSwiftPackageReference "FDNetwork" */;
+			productName = FDNetwork;
+		};
+		CB2D68402738162B0016F247 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB2D683F2738162B0016F247 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 048D594B26251F8100628F78 /* Project object */;
 }

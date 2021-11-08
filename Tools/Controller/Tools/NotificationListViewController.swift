@@ -87,7 +87,7 @@ class NotificationListViewController: BaseViewController {
         let tableView = UITableView(frame: .zero)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: FD_SafeAreaBottomHeight, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: CGFloat.safeAreaBottomHeight, right: 0)
         return tableView
     }()
 

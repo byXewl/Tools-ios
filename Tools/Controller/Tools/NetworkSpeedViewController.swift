@@ -25,8 +25,8 @@ class NetworkSpeedViewController: BaseViewController {
         view.addSubview(testBtn)
         testBtn.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(15)
-            make.top.equalToSuperview().offset(FD_StatusBarHeight + FD_LargeTitleHeight)
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.top.equalToSuperview().offset(.statusBarHeight + .navigationBarHeight)
+            make.width.equalTo(CGFloat.screenW - 30)
             make.height.equalTo(40)
         }
     }

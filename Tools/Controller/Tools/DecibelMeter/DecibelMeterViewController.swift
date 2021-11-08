@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FDUIKit
 
 class DecibelMeterViewController: BaseViewController {
     
@@ -31,7 +32,7 @@ class DecibelMeterViewController: BaseViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        waveView.frame = CGRect(x: 0, y: FD_TopHeight, width: FD_ScreenWidth, height: FD_ScreenHeight - FD_TopHeight - FD_SafeAreaBottomHeight - 40)
+        waveView.frame = CGRect(x: 0, y: .topHeight, width: .screenW, height: .screenH - .topHeight - .safeAreaBottomHeight - 40)
     }
     
     override func viewDidDisappear(_ animated: Bool) {

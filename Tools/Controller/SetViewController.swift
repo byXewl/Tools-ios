@@ -10,6 +10,7 @@ import MessageUI
 import DeviceKit
 import StoreKit
 import SafariServices
+import FDNetwork
 
 class SetViewController: UITableViewController {
     
@@ -26,7 +27,8 @@ class SetViewController: UITableViewController {
     
     func requestData(){
         FDNetwork.GET(url: "http://img.app.xiaobingkj.com/apps.json", param: nil) { result in
-            let data = result["data"] as! [[String:Any]]
+            let resultDict = result as! [String:Any]
+            let data = resultDict["data"] as! [[String:Any]]
             self.appArray.removeAll()
             for dict in data{
                 let model = AppModel.deserialize(from: dict) ?? AppModel()

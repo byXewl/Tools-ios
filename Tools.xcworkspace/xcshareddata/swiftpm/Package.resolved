@@ -1,0 +1,124 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",
+          "version": "5.4.3"
+        }
+      },
+      {
+        "package": "DeviceKit",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/DeviceKit.git",
+        "state": {
+          "branch": null,
+          "revision": "6b58d9a61ea0a7fd23f2e6092821dea2342c2f5a",
+          "version": "4.5.0"
+        }
+      },
+      {
+        "package": "FDFoundation",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/FDFoundation.git",
+        "state": {
+          "branch": "master",
+          "revision": "9c8487fc51f037f774578281a189f76ce6fd7067",
+          "version": null
+        }
+      },
+      {
+        "package": "FDNetwork",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/FDNetwork.git",
+        "state": {
+          "branch": "master",
+          "revision": "c96b04d0fb9b0654d3dea70e4f042dccdc4bedfd",
+          "version": null
+        }
+      },
+      {
+        "package": "FDUIKit",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/FDUIKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "8fbc1cc9229a1c2350495b24e1302bd51104cfa7",
+          "version": null
+        }
+      },
+      {
+        "package": "HandyJSON",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/HandyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "dcf39cf062680ffa4fd0acb7f9117a97755c113f",
+          "version": "5.0.2"
+        }
+      },
+      {
+        "package": "Hue",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/Hue.git",
+        "state": {
+          "branch": null,
+          "revision": "b9d920cee4ba795fefb828d130744eee1e3d2feb",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "MJRefresh",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/MJRefresh.git",
+        "state": {
+          "branch": null,
+          "revision": "dd358c661436951ecf1d3f9292c54a0d22e95c2a",
+          "version": "3.7.2"
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/SDWebImage.git",
+        "state": {
+          "branch": null,
+          "revision": "76dd4b49110b8624317fc128e7fa0d8a252018bc",
+          "version": "5.11.1"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/SnapKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "SwiftMessages",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/SwiftMessages.git",
+        "state": {
+          "branch": null,
+          "revision": "c5026484ff555db961ec549162e4026b017aa6c5",
+          "version": "9.0.4"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/SwiftyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "b3dcd7dbd0d488e1a7077cb33b00f2083e382f07",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "Toast",
+        "repositoryURL": "https://gitee.com/fandongtongxue_admin/Toast-Swift.git",
+        "state": {
+          "branch": "master",
+          "revision": "0c9493eeacb102cc614da385cfaaf475379f4ab4",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

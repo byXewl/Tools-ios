@@ -55,8 +55,8 @@ class OCRViewController: BaseViewController, UIImagePickerControllerDelegate, UI
     
     lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
-        scrollView.contentSize = CGSize(width: 0, height: (FD_ScreenWidth - 30) * 9 / 16 + 40 + 40 + 2 * 15 + FD_SafeAreaBottomHeight)
-        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -FD_SafeAreaBottomHeight, right: 0)
+        scrollView.contentSize = CGSize(width: 0, height: (CGFloat.screenW - 30) * 9 / 16 + 40 + 40 + 2 * 15 + CGFloat.safeAreaBottomHeight)
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -CGFloat.safeAreaBottomHeight, right: 0)
         scrollView.showsVerticalScrollIndicator = false
         return scrollView
     }()
@@ -82,7 +82,7 @@ class OCRViewController: BaseViewController, UIImagePickerControllerDelegate, UI
         title = "OCR"
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(FD_TopHeight)
+            make.top.equalToSuperview().offset(CGFloat.topHeight)
             make.left.equalToSuperview().offset(15)
             make.right.equalToSuperview().offset(-15)
             make.bottom.equalToSuperview()
@@ -90,7 +90,7 @@ class OCRViewController: BaseViewController, UIImagePickerControllerDelegate, UI
         scrollView.addSubview(selectBtn)
         selectBtn.snp.makeConstraints { (make) in
             make.left.equalToSuperview()
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
             make.top.equalToSuperview()
             make.height.equalTo(40)
         }
@@ -267,20 +267,20 @@ class OCRViewController: BaseViewController, UIImagePickerControllerDelegate, UI
             scrollView.addSubview(imageView)
             imageView.snp.makeConstraints { (make) in
                 make.left.equalToSuperview()
-                make.width.equalTo(FD_ScreenWidth - 30)
-                make.height.equalTo((FD_ScreenWidth - 30) * image.size.height / image.size.width)
+                make.width.equalTo(CGFloat.screenW - 30)
+                make.height.equalTo((CGFloat.screenW - 30) * image.size.height / image.size.width)
                 make.top.equalTo(self.selectBtn.snp.bottom).offset(15)
             }
             scrollView.addSubview(generateBtn)
             generateBtn.snp.makeConstraints { (make) in
                 make.left.equalToSuperview()
-                make.width.equalTo(FD_ScreenWidth - 30)
+                make.width.equalTo(CGFloat.screenW - 30)
                 make.height.equalTo(40)
                 make.top.equalTo(self.imageView.snp.bottom).offset(15)
             }
         }
         
-        scrollView.contentSize = CGSize(width: 0, height: 40 + 15 + (FD_ScreenWidth - 30) * image.size.height / image.size.width + 15 + 40 + FD_SafeAreaBottomHeight)
+        scrollView.contentSize = CGSize(width: 0, height: 40 + 15 + (CGFloat.screenW - 30) * image.size.height / image.size.width + 15 + 40 + CGFloat.safeAreaBottomHeight)
         
         // Account for image orientation by transforming view.
         let correctedImage = scaleAndOrient(image: image)

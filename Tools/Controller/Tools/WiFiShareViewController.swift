@@ -17,7 +17,7 @@ class WiFiShareViewController: BaseViewController {
         title = "WiFi分享"
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(FD_TopHeight)
+            make.top.equalToSuperview().offset(CGFloat.topHeight)
             make.left.equalToSuperview().offset(15)
             make.right.equalToSuperview().offset(-15)
             make.bottom.equalToSuperview()
@@ -26,20 +26,20 @@ class WiFiShareViewController: BaseViewController {
         nameTextField.snp.makeConstraints { (make) in
             make.top.left.equalToSuperview()
             make.height.equalTo(40)
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
         }
         scrollView.addSubview(passTextField)
         passTextField.snp.makeConstraints { (make) in
             make.left.equalToSuperview()
             make.top.equalTo(self.nameTextField.snp.bottom).offset(15)
             make.height.equalTo(40)
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
         }
         
         scrollView.addSubview(generateBtn)
         generateBtn.snp.makeConstraints { (make) in
             make.left.equalToSuperview()
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
             make.top.equalTo(self.passTextField.snp.bottom).offset(15)
             make.height.equalTo(40)
         }
@@ -127,8 +127,8 @@ class WiFiShareViewController: BaseViewController {
     
     lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
-        scrollView.contentSize = CGSize(width: 0, height: 40 * 3 + FD_ScreenWidth - 30 + 3 * 15 + FD_SafeAreaBottomHeight)
-        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -FD_SafeAreaBottomHeight, right: 0)
+        scrollView.contentSize = CGSize(width: 0, height: 40 * 3 + CGFloat.screenW - 30 + 3 * 15 + CGFloat.safeAreaBottomHeight)
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -CGFloat.safeAreaBottomHeight, right: 0)
         return scrollView
     }()
 

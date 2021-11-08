@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Kingfisher
+import FDNetwork
 
 class BilibiliCoverViewController: BaseViewController {
 
@@ -17,7 +17,7 @@ class BilibiliCoverViewController: BaseViewController {
         title = "小破站封面获取"
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(FD_TopHeight)
+            make.top.equalToSuperview().offset(CGFloat.topHeight)
             make.left.equalToSuperview()
             make.right.equalToSuperview()
             make.bottom.equalToSuperview()
@@ -27,13 +27,13 @@ class BilibiliCoverViewController: BaseViewController {
             make.left.equalToSuperview().offset(15)
             make.top.equalToSuperview()
             make.height.equalTo(40)
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
         }
         
         scrollView.addSubview(queryBtn)
         queryBtn.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(15)
-            make.width.equalTo(FD_ScreenWidth - 30)
+            make.width.equalTo(CGFloat.screenW - 30)
             make.top.equalTo(self.textField.snp.bottom).offset(15)
             make.height.equalTo(40)
         }
@@ -134,7 +134,7 @@ class BilibiliCoverViewController: BaseViewController {
     lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
         scrollView.contentSize = CGSize(width: 0, height: 40 + 15)
-        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -FD_SafeAreaBottomHeight, right: 0)
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -CGFloat.safeAreaBottomHeight, right: 0)
         return scrollView
     }()
 

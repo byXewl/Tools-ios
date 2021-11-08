@@ -27,7 +27,7 @@ class NewToolAddViewController: BaseViewController {
         nameTextField.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(15)
             make.right.equalToSuperview().offset(-15)
-            make.top.equalToSuperview().offset(FD_LargeTitleHeight + 15)
+            make.top.equalToSuperview().offset(.largeNavigationTitleHeight + 15)
             make.height.equalTo(50)
         }
         
