@@ -31,6 +31,10 @@
 		04786CA426C3C8EA004EC77D /* AudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 04786CA326C3C8EA004EC77D /* AudioRecorder.m */; };
 		04866EBA264E4BA900EC6E9D /* NotificationAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04866EB9264E4BA900EC6E9D /* NotificationAddViewController.swift */; };
 		04866EBC264E4CFF00EC6E9D /* NotificationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04866EBB264E4CFF00EC6E9D /* NotificationListViewController.swift */; };
+		04888C0A26DCB542002B69CA /* InkeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04888C0926DCB542002B69CA /* InkeViewController.swift */; };
+		04888C0C26DCB556002B69CA /* LiveItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04888C0B26DCB556002B69CA /* LiveItemCell.swift */; };
+		04888C0E26DCB587002B69CA /* InkeResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04888C0D26DCB587002B69CA /* InkeResponseModel.swift */; };
+		04888C1026DCB7B3002B69CA /* InkePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04888C0F26DCB7B3002B69CA /* InkePlayerViewController.swift */; };
 		048D595726251F8100628F78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D595626251F8100628F78 /* AppDelegate.swift */; };
 		048D595926251F8100628F78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D595826251F8100628F78 /* SceneDelegate.swift */; };
 		048D595B26251F8100628F78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D595A26251F8100628F78 /* ViewController.swift */; };
@@ -63,9 +67,17 @@
 		04AACAF32655EA6D003C17E7 /* String+FD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AACAF22655EA6D003C17E7 /* String+FD.swift */; };
 		04B1C83426296BE5005EDBCB /* ParseShortVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1C83326296BE5005EDBCB /* ParseShortVideoController.swift */; };
 		04B1C8492629765B005EDBCB /* ParseShortVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1C8482629765B005EDBCB /* ParseShortVideoModel.swift */; };
+		04B2282726FEA43A007D586F /* tools.json in Resources */ = {isa = PBXBuildFile; fileRef = 04B2282626FEA43A007D586F /* tools.json */; };
 		04BE545626B278D100B64825 /* NewToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE545526B278D100B64825 /* NewToolViewController.swift */; };
 		04BE545826B283AA00B64825 /* NewToolItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE545726B283AA00B64825 /* NewToolItemCell.swift */; };
 		04BE545A26B28B1400B64825 /* NewToolAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE545926B28B1300B64825 /* NewToolAddViewController.swift */; };
+		04CB535526CB615A00392961 /* ChelaileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB535426CB615A00392961 /* ChelaileViewController.swift */; };
+		04CB535726CB685100392961 /* ChelaileAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB535626CB685100392961 /* ChelaileAddressModel.swift */; };
+		04CB535926CB8A2700392961 /* ChelaileHomePageInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB535826CB8A2700392961 /* ChelaileHomePageInfoModel.swift */; };
+		04CB536326CB905A00392961 /* ChelaileStationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB536226CB905A00392961 /* ChelaileStationListCell.swift */; };
+		04CB536F26CB965C00392961 /* ChelaileLineListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB536E26CB965C00392961 /* ChelaileLineListCell.swift */; };
+		04CB537126CB9D3C00392961 /* ChelaileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB537026CB9D3C00392961 /* ChelaileDetailViewController.swift */; };
+		04CB537326CBAAE700392961 /* ChelaileStationDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB537226CBAAE700392961 /* ChelaileStationDetailModel.swift */; };
 		04D0E40A264CB08400E45843 /* WebpageShotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0E409264CB08400E45843 /* WebpageShotViewController.swift */; };
 		04D0E40D264CB22200E45843 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0E40C264CB22200E45843 /* WebViewController.swift */; };
 		8B3A2194BDA724F19F7DC8D4 /* Pods_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7A5A17F50E9D36BED15AE2 /* Pods_Tools.framework */; };
@@ -86,8 +98,6 @@
 		04249AD126B0FD1200BDB65A /* BilibiliVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilibiliVideoModel.swift; sourceTree = "<group>"; };
 		043B17FC2635644C006FAC93 /* Tools-Bridging-Header.h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tools-Bridging-Header.h.h"; sourceTree = "<group>"; };
 		0444DE31264615A3001DDACA /* SetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
-		0444DE3926461C35001DDACA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		0444DE3A26461C35001DDACA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		0444DE3D26461C93001DDACA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0444DE4026461C98001DDACA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0444DEA62646838B001DDACA /* UnsplashDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashDetailViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +120,10 @@
 		04786CA326C3C8EA004EC77D /* AudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecorder.m; sourceTree = "<group>"; };
 		04866EB9264E4BA900EC6E9D /* NotificationAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationAddViewController.swift; sourceTree = "<group>"; };
 		04866EBB264E4CFF00EC6E9D /* NotificationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationListViewController.swift; sourceTree = "<group>"; };
+		04888C0926DCB542002B69CA /* InkeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InkeViewController.swift; sourceTree = "<group>"; };
+		04888C0B26DCB556002B69CA /* LiveItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveItemCell.swift; sourceTree = "<group>"; };
+		04888C0D26DCB587002B69CA /* InkeResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InkeResponseModel.swift; sourceTree = "<group>"; };
+		04888C0F26DCB7B3002B69CA /* InkePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InkePlayerViewController.swift; sourceTree = "<group>"; };
 		048D595326251F8100628F78 /* Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048D595626251F8100628F78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		048D595826251F8100628F78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,9 +159,17 @@
 		04AACAF22655EA6D003C17E7 /* String+FD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FD.swift"; sourceTree = "<group>"; };
 		04B1C83326296BE5005EDBCB /* ParseShortVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseShortVideoController.swift; sourceTree = "<group>"; };
 		04B1C8482629765B005EDBCB /* ParseShortVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseShortVideoModel.swift; sourceTree = "<group>"; };
+		04B2282626FEA43A007D586F /* tools.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tools.json; sourceTree = "<group>"; };
 		04BE545526B278D100B64825 /* NewToolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToolViewController.swift; sourceTree = "<group>"; };
 		04BE545726B283AA00B64825 /* NewToolItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToolItemCell.swift; sourceTree = "<group>"; };
 		04BE545926B28B1300B64825 /* NewToolAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewToolAddViewController.swift; sourceTree = "<group>"; };
+		04CB535426CB615A00392961 /* ChelaileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChelaileViewController.swift; sourceTree = "<group>"; };
+		04CB535626CB685100392961 /* ChelaileAddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChelaileAddressModel.swift; sourceTree = "<group>"; };
+		04CB535826CB8A2700392961 /* ChelaileHomePageInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChelaileHomePageInfoModel.swift; sourceTree = "<group>"; };
+		04CB536226CB905A00392961 /* ChelaileStationListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChelaileStationListCell.swift; sourceTree = "<group>"; };
+		04CB536E26CB965C00392961 /* ChelaileLineListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChelaileLineListCell.swift; sourceTree = "<group>"; };
+		04CB537026CB9D3C00392961 /* ChelaileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChelaileDetailViewController.swift; sourceTree = "<group>"; };
+		04CB537226CBAAE700392961 /* ChelaileStationDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChelaileStationDetailModel.swift; sourceTree = "<group>"; };
 		04D0E409264CB08400E45843 /* WebpageShotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebpageShotViewController.swift; sourceTree = "<group>"; };
 		04D0E40C264CB22200E45843 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		3A91064668C4DE3440D969AD /* Pods-Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.debug.xcconfig"; path = "Target Support Files/Pods-Tools/Pods-Tools.debug.xcconfig"; sourceTree = "<group>"; };
@@ -275,9 +297,12 @@
 		04A93DFD2627F004006C9773 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04888C0B26DCB556002B69CA /* LiveItemCell.swift */,
 				048D598F26253A3600628F78 /* ToolListCell.swift */,
 				04A93DF02627E781006C9773 /* ToolItemCell.swift */,
 				04BE545726B283AA00B64825 /* NewToolItemCell.swift */,
+				04CB536226CB905A00392961 /* ChelaileStationListCell.swift */,
+				04CB536E26CB965C00392961 /* ChelaileLineListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,6 +311,8 @@
 			isa = PBXGroup;
 			children = (
 				CB2D68422738170F0016F247 /* AwemeModel.swift */,
+				04B2282626FEA43A007D586F /* tools.json */,
+				04888C0D26DCB587002B69CA /* InkeResponseModel.swift */,
 				0451458526A805C40090AFBA /* AppModel.swift */,
 				048D599C26256CB300628F78 /* ToolModel.swift */,
 				04B1C8482629765B005EDBCB /* ParseShortVideoModel.swift */,
@@ -293,6 +320,9 @@
 				047554022632747C001087D7 /* JuHePhoneResponseModel.swift */,
 				04249AD126B0FD1200BDB65A /* BilibiliVideoModel.swift */,
 				CB422BE426C3F9A70090D9FA /* CurrencyConverterModel.swift */,
+				04CB535626CB685100392961 /* ChelaileAddressModel.swift */,
+				04CB535826CB8A2700392961 /* ChelaileHomePageInfoModel.swift */,
+				04CB537226CBAAE700392961 /* ChelaileStationDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,6 +330,7 @@
 		04A93ED52628186B006C9773 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				04888C0926DCB542002B69CA /* InkeViewController.swift */,
 				0450E87926C4EAB6006AB2ED /* VideoToLivePhotoViewController.swift */,
 				04786C9A26C3C405004EC77D /* DecibelMeter */,
 				049A5DD626C359EE0023968C /* RelativeCalculator */,
@@ -323,6 +354,9 @@
 				04249ACF26B0FCC400BDB65A /* BilibiliVideoViewController.swift */,
 				CB422BE226C3F82C0090D9FA /* CurrencyConverterViewController.swift */,
 				CB2D6844273817A10016F247 /* AwemeViewController.swift */,
+				04CB535426CB615A00392961 /* ChelaileViewController.swift */,
+				04CB537026CB9D3C00392961 /* ChelaileDetailViewController.swift */,
+				04888C0F26DCB7B3002B69CA /* InkePlayerViewController.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -430,6 +464,7 @@
 				048D596326251F8200628F78 /* LaunchScreen.storyboard in Resources */,
 				049A5DD526C359E50023968C /* relationship.min.js in Resources */,
 				0444DE3E26461C93001DDACA /* Localizable.strings in Resources */,
+				04B2282726FEA43A007D586F /* tools.json in Resources */,
 				049A5DD326C359910023968C /* RelativeCalculatorViewController.xib in Resources */,
 				048D596026251F8200628F78 /* Assets.xcassets in Resources */,
 				048D595E26251F8100628F78 /* Main.storyboard in Resources */,
@@ -522,12 +557,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CB537126CB9D3C00392961 /* ChelaileDetailViewController.swift in Sources */,
+				0464B182262EA9C80019ED4B /* FDDefine.swift in Sources */,
 				048D59852625272500628F78 /* BaseNavigationController.swift in Sources */,
 				04A93ED8262818F4006C9773 /* ToolDetailViewController.swift in Sources */,
 				049A5DDC26C35A2E0023968C /* CalculatorButton.swift in Sources */,
 				048D597C262524D200628F78 /* ToolsViewController.swift in Sources */,
 				048D595B26251F8100628F78 /* ViewController.swift in Sources */,
 				049A5DDB26C35A2E0023968C /* UIView+Layout.swift in Sources */,
+				04888C1026DCB7B3002B69CA /* InkePlayerViewController.swift in Sources */,
 				04A93DF92627E9F0006C9773 /* BaseModel.swift in Sources */,
 				04B1C8492629765B005EDBCB /* ParseShortVideoModel.swift in Sources */,
 				0451458626A805C40090AFBA /* AppModel.swift in Sources */,
@@ -547,25 +585,33 @@
 				048D599D26256CB300628F78 /* ToolModel.swift in Sources */,
 				047553F226326160001087D7 /* Config.swift in Sources */,
 				CB422BE526C3F9A70090D9FA /* CurrencyConverterModel.swift in Sources */,
+				04CB536F26CB965C00392961 /* ChelaileLineListCell.swift in Sources */,
 				04249AD026B0FCC400BDB65A /* BilibiliVideoViewController.swift in Sources */,
 				048D595726251F8100628F78 /* AppDelegate.swift in Sources */,
 				0475540C2632C22D001087D7 /* NetworkSpeedViewController.swift in Sources */,
+				04CB535526CB615A00392961 /* ChelaileViewController.swift in Sources */,
 				04AACAF32655EA6D003C17E7 /* String+FD.swift in Sources */,
 				0444DEA72646838B001DDACA /* UnsplashDetailViewController.swift in Sources */,
 				046B19332631429A00D5D475 /* OCRViewController.swift in Sources */,
 				047554032632747C001087D7 /* JuHePhoneResponseModel.swift in Sources */,
 				0403A8062636880D00876BB9 /* ScreenShotViewController.swift in Sources */,
 				048D595926251F8100628F78 /* SceneDelegate.swift in Sources */,
+				04CB535726CB685100392961 /* ChelaileAddressModel.swift in Sources */,
 				049420A0262FD26A0088ADCE /* TTSViewController.swift in Sources */,
+				04CB535926CB8A2700392961 /* ChelaileHomePageInfoModel.swift in Sources */,
 				047554062632A890001087D7 /* Dictionary.swift in Sources */,
 				048D598D2625298000628F78 /* ToolsSearchResultController.swift in Sources */,
 				048D599026253A3600628F78 /* ToolListCell.swift in Sources */,
+				04888C0E26DCB587002B69CA /* InkeResponseModel.swift in Sources */,
 				048D59822625266700628F78 /* BaseViewController.swift in Sources */,
 				04A93DF12627E781006C9773 /* ToolItemCell.swift in Sources */,
+				04888C0C26DCB556002B69CA /* LiveItemCell.swift in Sources */,
 				04866EBC264E4CFF00EC6E9D /* NotificationListViewController.swift in Sources */,
 				04249AD226B0FD1200BDB65A /* BilibiliVideoModel.swift in Sources */,
 				CB2D68432738170F0016F247 /* AwemeModel.swift in Sources */,
+				04CB537326CBAAE700392961 /* ChelaileStationDetailModel.swift in Sources */,
 				04B1C83426296BE5005EDBCB /* ParseShortVideoController.swift in Sources */,
+				04CB536326CB905A00392961 /* ChelaileStationListCell.swift in Sources */,
 				049A5DDA26C35A2E0023968C /* UIColor+.swift in Sources */,
 				04D0E40A264CB08400E45843 /* WebpageShotViewController.swift in Sources */,
 				0450E87A26C4EAB6006AB2ED /* VideoToLivePhotoViewController.swift in Sources */,
@@ -576,6 +622,8 @@
 				CB2D6845273817A10016F247 /* AwemeViewController.swift in Sources */,
 				04BE545826B283AA00B64825 /* NewToolItemCell.swift in Sources */,
 				049420A9263002FA0088ADCE /* WiFiShareViewController.swift in Sources */,
+				04888C0A26DCB542002B69CA /* InkeViewController.swift in Sources */,
+				04B1C846262974E9005EDBCB /* FDNetwork.swift in Sources */,
 				04995C472633B91C00642205 /* BilibiliCoverViewController.swift in Sources */,
 				0472F0F026C2759F001C9705 /* DecibelMeterViewController.swift in Sources */,
 				048D5979262524C600628F78 /* MyToolsViewController.swift in Sources */,
@@ -598,7 +646,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				048D595D26251F8100628F78 /* Base */,
-				0444DE3926461C35001DDACA /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -607,7 +654,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				048D596226251F8200628F78 /* Base */,
-				0444DE3A26461C35001DDACA /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -741,7 +787,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Tools/Tools.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20210814;
+				CURRENT_PROJECT_VERSION = 20210925;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = F9N98X7P4L;
 				INFOPLIST_FILE = Tools/Info.plist;
@@ -766,7 +812,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Tools/Tools.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20210814;
+				CURRENT_PROJECT_VERSION = 20210925;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = F9N98X7P4L;
 				INFOPLIST_FILE = Tools/Info.plist;

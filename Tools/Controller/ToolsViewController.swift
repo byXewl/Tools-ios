@@ -41,7 +41,7 @@ class ToolsViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        requestData()
+        loadLocalData()
     }
     
     func loadLocalData(){
@@ -65,8 +65,8 @@ class ToolsViewController: BaseViewController {
     func requestData(){
 //        http://img.app.xiaobingkj.com/tools.json
         FDNetwork.GET(url: "http://api.tools.app.xiaobingkj.com/tools.json", param: nil) { result in
-            self.dataArray.removeAll()
             let resultDict = result as! [String: Any]
+            self.dataArray.removeAll()
             let resultArray = resultDict["data"] as! [[String: Any]]
             for dict in resultArray{
                 let model = ToolModel.deserialize(from: dict)

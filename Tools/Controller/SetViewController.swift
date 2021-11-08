@@ -27,7 +27,7 @@ class SetViewController: UITableViewController {
     
     func requestData(){
         FDNetwork.GET(url: "http://img.app.xiaobingkj.com/apps.json", param: nil) { result in
-            let resultDict = result as! [String:Any]
+            let resultDict = result as! [String: Any]
             let data = resultDict["data"] as! [[String:Any]]
             self.appArray.removeAll()
             for dict in data{
@@ -128,6 +128,13 @@ class SetViewController: UITableViewController {
             break
         }
         return cell!
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 2 {
+            return NSLocalizedString("Our apps", comment: "")
+        }
+        return ""
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

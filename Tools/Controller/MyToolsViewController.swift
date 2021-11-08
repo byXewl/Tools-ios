@@ -267,6 +267,11 @@ extension MyToolsViewController : UICollectionViewDelegate,UICollectionViewDataS
             toolVC.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(toolVC, animated: true)
             break
+        case 22:
+            let toolVC = ChelaileViewController()
+            toolVC.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(toolVC, animated: true)
+            break
         case 23:
             let toolVC = CurrencyConverterViewController()
             toolVC.hidesBottomBarWhenPushed = true
@@ -274,6 +279,11 @@ extension MyToolsViewController : UICollectionViewDelegate,UICollectionViewDataS
             break
         case 24:
             let toolVC = VideoToLivePhotoViewController()
+            toolVC.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(toolVC, animated: true)
+            break
+        case 25:
+            let toolVC = InkeViewController()
             toolVC.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(toolVC, animated: true)
             break
@@ -352,11 +362,17 @@ extension MyToolsViewController : UICollectionViewDelegate,UICollectionViewDataS
         case 21:
             let toolVC = RelativeCalculatorViewController()
             return toolVC
+        case 22:
+            let toolVC = RelativeCalculatorViewController()
+            return toolVC
         case 23:
             let toolVC = CurrencyConverterViewController()
             return toolVC
         case 24:
             let toolVC = VideoToLivePhotoViewController()
+            return toolVC
+        case 25:
+            let toolVC = InkeViewController()
             return toolVC
         default:
             view.makeToast("未完成的功能")
