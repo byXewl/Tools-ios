@@ -188,7 +188,7 @@ class BilibiliVideoViewController: BaseViewController {
         bannerView.adUnitID = AdMobAdUnitID
         bannerView.rootViewController = self
         bannerView.delegate = self
-        bannerView.adSize = kGADAdSizeBanner
+        bannerView.adSize = GADAdSizeBanner
         return bannerView
     }()
     
