@@ -103,10 +103,10 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
-  - PLPlayerKit (3.4.8):
-    - PLPlayerKit/universal (= 3.4.8)
-  - PLPlayerKit/universal (3.4.8)
   - PromisesObjC (2.0.0)
+  - qplayer2-core (1.5.0):
+    - qplayer2-core/iphoneos (= 1.5.0)
+  - qplayer2-core/iphoneos (1.5.0)
   - SwViewCapture (1.0.6)
   - UnsplashPhotoPicker (1.1.1)
   - ZFPlayer (4.0.3):
@@ -124,7 +124,7 @@ DEPENDENCIES:
   - Firebase/Crashlytics
   - Google-Mobile-Ads-SDK
   - MarkdownView
-  - PLPlayerKit (from `https://raw.githubusercontent.com/pili-engineering/PLPlayerKit/master/PLPlayerKit-Universal.podspec`)
+  - qplayer2-core (= 1.5.0)
   - SwViewCapture
   - UnsplashPhotoPicker (~> 1.1.1)
   - ZFPlayer
@@ -149,13 +149,10 @@ SPEC REPOS:
     - MarkdownView
     - nanopb
     - PromisesObjC
+    - qplayer2-core
     - SwViewCapture
     - UnsplashPhotoPicker
     - ZFPlayer
-
-EXTERNAL SOURCES:
-  PLPlayerKit:
-    :podspec: https://raw.githubusercontent.com/pili-engineering/PLPlayerKit/master/PLPlayerKit-Universal.podspec
 
 SPEC CHECKSUMS:
   Eureka: 60cf058f86a8fb3ed26165ba5292b9850361b0a6
@@ -173,12 +170,12 @@ SPEC CHECKSUMS:
   IJKMediaFramework: f1119f6324c96bc4654f3045a5beaa95ba0596c0
   MarkdownView: 22249778219cc22901f1454e8355298dd0bda7f0
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  PLPlayerKit: ae5feb95a1fa89b7beb62d6c32a79fa95eb7ccf0
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  qplayer2-core: 33765019e7a1d6036781ba80a0cb8fee2545a303
   SwViewCapture: edf1ea74e164f47af005fbdfdc6fc18ec373ec69
   UnsplashPhotoPicker: 86520e34cfded8fb4a41910bf87afe571906b4e3
   ZFPlayer: 624c92de06eb34df322c3b53b4c9ce760f528f7a
 
-PODFILE CHECKSUM: b87545e23eabfff21426dfdc8febb492ffa42fcf
+PODFILE CHECKSUM: 26508fee3f21ee20589445f53cd2a68eeda0cbd7
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.16.2

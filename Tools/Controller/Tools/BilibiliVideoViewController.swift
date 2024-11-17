@@ -194,7 +194,8 @@ class BilibiliVideoViewController: BaseViewController {
     
     lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
-        scrollView.contentSize = CGSize(width: 0, height: (UIScreen.main.bounds.size.width - 30) * 9 / 16 + 40 + 80 + 40 + 40 + 4 * 15 + 50 + CGFloat.safeAreaBottomHeight)
+        let height: CGFloat = (UIScreen.main.bounds.size.width - 30) * 9 / 16 + 310 + CGFloat.safeAreaBottomHeight
+        scrollView.contentSize = CGSize(width: 0, height: height)
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -CGFloat.safeAreaBottomHeight, right: 0)
         return scrollView
     }()

@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008737772CEA2BDF005635C2 /* FDFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 008737762CEA2BDF005635C2 /* FDFoundation */; };
+		0087377A2CEA2BF8005635C2 /* FDUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 008737792CEA2BF8005635C2 /* FDUIKit */; };
+		0087377D2CEA2C10005635C2 /* FDNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 0087377C2CEA2C10005635C2 /* FDNetwork */; };
+		008737802CEA2E08005635C2 /* HandyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0087377F2CEA2E08005635C2 /* HandyJSON */; };
 		0403A8062636880D00876BB9 /* ScreenShotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403A8052636880D00876BB9 /* ScreenShotViewController.swift */; };
 		0403A81D2636884700876BB9 /* ShotOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403A81C2636884700876BB9 /* ShotOnViewController.swift */; };
 		04249AD026B0FCC400BDB65A /* BilibiliVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04249ACF26B0FCC400BDB65A /* BilibiliVideoViewController.swift */; };
@@ -80,10 +84,7 @@
 		04CB537326CBAAE700392961 /* ChelaileStationDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB537226CBAAE700392961 /* ChelaileStationDetailModel.swift */; };
 		04D0E40A264CB08400E45843 /* WebpageShotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0E409264CB08400E45843 /* WebpageShotViewController.swift */; };
 		04D0E40D264CB22200E45843 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0E40C264CB22200E45843 /* WebViewController.swift */; };
-		8B3A2194BDA724F19F7DC8D4 /* Pods_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7A5A17F50E9D36BED15AE2 /* Pods_Tools.framework */; };
-		CB2D6838273815CC0016F247 /* FDFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = CB2D6837273815CC0016F247 /* FDFoundation */; };
-		CB2D683B273815DD0016F247 /* FDUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = CB2D683A273815DD0016F247 /* FDUIKit */; };
-		CB2D683E273815EB0016F247 /* FDNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = CB2D683D273815EB0016F247 /* FDNetwork */; };
+		C47583F6C3F2A3BE706D9B1A /* Pods_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBFA974C002928DC16962E7 /* Pods_Tools.framework */; };
 		CB2D68412738162B0016F247 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = CB2D68402738162B0016F247 /* Toast */; };
 		CB2D68432738170F0016F247 /* AwemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D68422738170F0016F247 /* AwemeModel.swift */; };
 		CB2D6845273817A10016F247 /* AwemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D6844273817A10016F247 /* AwemeViewController.swift */; };
@@ -173,12 +174,12 @@
 		04D0E409264CB08400E45843 /* WebpageShotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebpageShotViewController.swift; sourceTree = "<group>"; };
 		04D0E40C264CB22200E45843 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		3A91064668C4DE3440D969AD /* Pods-Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.debug.xcconfig"; path = "Target Support Files/Pods-Tools/Pods-Tools.debug.xcconfig"; sourceTree = "<group>"; };
-		8E7A5A17F50E9D36BED15AE2 /* Pods_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EF2C540199B83CDEE38334 /* Pods-Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.release.xcconfig"; path = "Target Support Files/Pods-Tools/Pods-Tools.release.xcconfig"; sourceTree = "<group>"; };
 		CB2D68422738170F0016F247 /* AwemeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwemeModel.swift; sourceTree = "<group>"; };
 		CB2D6844273817A10016F247 /* AwemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwemeViewController.swift; sourceTree = "<group>"; };
 		CB422BE226C3F82C0090D9FA /* CurrencyConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewController.swift; sourceTree = "<group>"; };
 		CB422BE426C3F9A70090D9FA /* CurrencyConverterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterModel.swift; sourceTree = "<group>"; };
+		DBBFA974C002928DC16962E7 /* Pods_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,11 +188,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2D68412738162B0016F247 /* Toast in Frameworks */,
-				CB2D6838273815CC0016F247 /* FDFoundation in Frameworks */,
-				8B3A2194BDA724F19F7DC8D4 /* Pods_Tools.framework in Frameworks */,
+				008737772CEA2BDF005635C2 /* FDFoundation in Frameworks */,
 				0494207F262FB44A0088ADCE /* CloudKit.framework in Frameworks */,
-				CB2D683E273815EB0016F247 /* FDNetwork in Frameworks */,
-				CB2D683B273815DD0016F247 /* FDUIKit in Frameworks */,
+				008737802CEA2E08005635C2 /* HandyJSON in Frameworks */,
+				0087377A2CEA2BF8005635C2 /* FDUIKit in Frameworks */,
+				0087377D2CEA2C10005635C2 /* FDNetwork in Frameworks */,
+				C47583F6C3F2A3BE706D9B1A /* Pods_Tools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				0494207E262FB44A0088ADCE /* CloudKit.framework */,
-				8E7A5A17F50E9D36BED15AE2 /* Pods_Tools.framework */,
+				DBBFA974C002928DC16962E7 /* Pods_Tools.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -408,10 +410,11 @@
 			);
 			name = Tools;
 			packageProductDependencies = (
-				CB2D6837273815CC0016F247 /* FDFoundation */,
-				CB2D683A273815DD0016F247 /* FDUIKit */,
-				CB2D683D273815EB0016F247 /* FDNetwork */,
 				CB2D68402738162B0016F247 /* Toast */,
+				008737762CEA2BDF005635C2 /* FDFoundation */,
+				008737792CEA2BF8005635C2 /* FDUIKit */,
+				0087377C2CEA2C10005635C2 /* FDNetwork */,
+				0087377F2CEA2E08005635C2 /* HandyJSON */,
 			);
 			productName = Tools;
 			productReference = 048D595326251F8100628F78 /* Tools.app */;
@@ -442,10 +445,11 @@
 			);
 			mainGroup = 048D594A26251F8100628F78;
 			packageReferences = (
-				CB2D6836273815CC0016F247 /* XCRemoteSwiftPackageReference "FDFoundation" */,
-				CB2D6839273815DD0016F247 /* XCRemoteSwiftPackageReference "FDUIKit" */,
-				CB2D683C273815EB0016F247 /* XCRemoteSwiftPackageReference "FDNetwork" */,
 				CB2D683F2738162B0016F247 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				008737752CEA2BDF005635C2 /* XCRemoteSwiftPackageReference "FDFoundation" */,
+				008737782CEA2BF8005635C2 /* XCRemoteSwiftPackageReference "FDUIKit" */,
+				0087377B2CEA2C10005635C2 /* XCRemoteSwiftPackageReference "FDNetwork" */,
+				0087377E2CEA2E08005635C2 /* XCRemoteSwiftPackageReference "HandyJSON" */,
 			);
 			productRefGroup = 048D595426251F8100628F78 /* Products */;
 			projectDirPath = "";
@@ -785,7 +789,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Tools/Tools.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20220219;
+				CURRENT_PROJECT_VERSION = 20241117;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = F9N98X7P4L;
 				INFOPLIST_FILE = Tools/Info.plist;
@@ -794,6 +798,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.fandong.Tools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/Tools/Tools-Bridging-Header.h.h";
@@ -810,7 +815,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Tools/Tools.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20220219;
+				CURRENT_PROJECT_VERSION = 20241117;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = F9N98X7P4L;
 				INFOPLIST_FILE = Tools/Info.plist;
@@ -819,6 +824,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.fandong.Tools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/Tools/Tools-Bridging-Header.h.h";
@@ -851,25 +857,33 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CB2D6836273815CC0016F247 /* XCRemoteSwiftPackageReference "FDFoundation" */ = {
+		008737752CEA2BDF005635C2 /* XCRemoteSwiftPackageReference "FDFoundation" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitee.com/fandongtongxue_admin/FDFoundation.git";
+			repositoryURL = "https://github.com/fandongtongxue/FDFoundation";
 			requirement = {
 				branch = master;
 				kind = branch;
 			};
 		};
-		CB2D6839273815DD0016F247 /* XCRemoteSwiftPackageReference "FDUIKit" */ = {
+		008737782CEA2BF8005635C2 /* XCRemoteSwiftPackageReference "FDUIKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitee.com/fandongtongxue_admin/FDUIKit.git";
+			repositoryURL = "https://github.com/fandongtongxue/FDUIKit";
 			requirement = {
 				branch = master;
 				kind = branch;
 			};
 		};
-		CB2D683C273815EB0016F247 /* XCRemoteSwiftPackageReference "FDNetwork" */ = {
+		0087377B2CEA2C10005635C2 /* XCRemoteSwiftPackageReference "FDNetwork" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitee.com/fandongtongxue_admin/FDNetwork.git";
+			repositoryURL = "https://github.com/fandongtongxue/FDNetwork";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		0087377E2CEA2E08005635C2 /* XCRemoteSwiftPackageReference "HandyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Miles-Matheson/HandyJSON";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -886,20 +900,25 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CB2D6837273815CC0016F247 /* FDFoundation */ = {
+		008737762CEA2BDF005635C2 /* FDFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB2D6836273815CC0016F247 /* XCRemoteSwiftPackageReference "FDFoundation" */;
+			package = 008737752CEA2BDF005635C2 /* XCRemoteSwiftPackageReference "FDFoundation" */;
 			productName = FDFoundation;
 		};
-		CB2D683A273815DD0016F247 /* FDUIKit */ = {
+		008737792CEA2BF8005635C2 /* FDUIKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB2D6839273815DD0016F247 /* XCRemoteSwiftPackageReference "FDUIKit" */;
+			package = 008737782CEA2BF8005635C2 /* XCRemoteSwiftPackageReference "FDUIKit" */;
 			productName = FDUIKit;
 		};
-		CB2D683D273815EB0016F247 /* FDNetwork */ = {
+		0087377C2CEA2C10005635C2 /* FDNetwork */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB2D683C273815EB0016F247 /* XCRemoteSwiftPackageReference "FDNetwork" */;
+			package = 0087377B2CEA2C10005635C2 /* XCRemoteSwiftPackageReference "FDNetwork" */;
 			productName = FDNetwork;
+		};
+		0087377F2CEA2E08005635C2 /* HandyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0087377E2CEA2E08005635C2 /* XCRemoteSwiftPackageReference "HandyJSON" */;
+			productName = HandyJSON;
 		};
 		CB2D68402738162B0016F247 /* Toast */ = {
 			isa = XCSwiftPackageProductDependency;

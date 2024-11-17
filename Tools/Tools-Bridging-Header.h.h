@@ -16,6 +16,6 @@
 #import "AudioRecorder.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
-#import <PLPlayerKit/PLPlayerKit.h>
+#import <qplayer2_core/qplayer2_core.h>
 
 #endif /* Tools_Bridging_Header_h_h */

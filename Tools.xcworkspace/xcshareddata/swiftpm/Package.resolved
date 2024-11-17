@@ -1,124 +1,123 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Alamofire",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/Alamofire.git",
-        "state": {
-          "branch": null,
-          "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",
-          "version": "5.4.3"
-        }
-      },
-      {
-        "package": "DeviceKit",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/DeviceKit.git",
-        "state": {
-          "branch": null,
-          "revision": "6b58d9a61ea0a7fd23f2e6092821dea2342c2f5a",
-          "version": "4.5.0"
-        }
-      },
-      {
-        "package": "FDFoundation",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/FDFoundation.git",
-        "state": {
-          "branch": "master",
-          "revision": "9c8487fc51f037f774578281a189f76ce6fd7067",
-          "version": null
-        }
-      },
-      {
-        "package": "FDNetwork",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/FDNetwork.git",
-        "state": {
-          "branch": "master",
-          "revision": "410e4ede7a84c1596a61a03504100d7abbe671b7",
-          "version": null
-        }
-      },
-      {
-        "package": "FDUIKit",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/FDUIKit.git",
-        "state": {
-          "branch": "master",
-          "revision": "8fbc1cc9229a1c2350495b24e1302bd51104cfa7",
-          "version": null
-        }
-      },
-      {
-        "package": "HandyJSON",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/HandyJSON.git",
-        "state": {
-          "branch": null,
-          "revision": "dcf39cf062680ffa4fd0acb7f9117a97755c113f",
-          "version": "5.0.2"
-        }
-      },
-      {
-        "package": "Hue",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/Hue.git",
-        "state": {
-          "branch": null,
-          "revision": "b9d920cee4ba795fefb828d130744eee1e3d2feb",
-          "version": "5.0.1"
-        }
-      },
-      {
-        "package": "MJRefresh",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/MJRefresh.git",
-        "state": {
-          "branch": null,
-          "revision": "dd358c661436951ecf1d3f9292c54a0d22e95c2a",
-          "version": "3.7.2"
-        }
-      },
-      {
-        "package": "SDWebImage",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/SDWebImage.git",
-        "state": {
-          "branch": null,
-          "revision": "76dd4b49110b8624317fc128e7fa0d8a252018bc",
-          "version": "5.11.1"
-        }
-      },
-      {
-        "package": "SnapKit",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/SnapKit.git",
-        "state": {
-          "branch": null,
-          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
-          "version": "5.0.1"
-        }
-      },
-      {
-        "package": "SwiftMessages",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/SwiftMessages.git",
-        "state": {
-          "branch": null,
-          "revision": "c5026484ff555db961ec549162e4026b017aa6c5",
-          "version": "9.0.4"
-        }
-      },
-      {
-        "package": "SwiftyJSON",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/SwiftyJSON.git",
-        "state": {
-          "branch": null,
-          "revision": "b3dcd7dbd0d488e1a7077cb33b00f2083e382f07",
-          "version": "5.0.1"
-        }
-      },
-      {
-        "package": "Toast",
-        "repositoryURL": "https://gitee.com/fandongtongxue_admin/Toast-Swift.git",
-        "state": {
-          "branch": "master",
-          "revision": "0c9493eeacb102cc614da385cfaaf475379f4ab4",
-          "version": null
-        }
+  "originHash" : "c9830ef773c3f33274afb58d5e6534b3346738e83234a15096b377884f934078",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "revision" : "e16d3481f5ed35f0472cb93350085853d754913f",
+        "version" : "5.10.1"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "devicekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devicekit/DeviceKit.git",
+      "state" : {
+        "revision" : "7ff5331960151aec74fb422e1d45f54ef6cc086d",
+        "version" : "5.5.0"
+      }
+    },
+    {
+      "identity" : "fdfoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fandongtongxue/FDFoundation",
+      "state" : {
+        "branch" : "master",
+        "revision" : "b7aed21c0c1856d269a8adb8cdfca92924373dd6"
+      }
+    },
+    {
+      "identity" : "fdnetwork",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fandongtongxue/FDNetwork",
+      "state" : {
+        "branch" : "master",
+        "revision" : "faa165456b6f5d5bb1778e78c52ab0e800369168"
+      }
+    },
+    {
+      "identity" : "fduikit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fandongtongxue/FDUIKit",
+      "state" : {
+        "branch" : "master",
+        "revision" : "e4b8ac8a7adebba9e6f4b592331e25987bf3ec06"
+      }
+    },
+    {
+      "identity" : "handyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Miles-Matheson/HandyJSON",
+      "state" : {
+        "branch" : "master",
+        "revision" : "de8a7126d2270da55cea3cb45dadffcfd002dbbe"
+      }
+    },
+    {
+      "identity" : "hue",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zenangst/Hue",
+      "state" : {
+        "revision" : "b9d920cee4ba795fefb828d130744eee1e3d2feb",
+        "version" : "5.0.1"
+      }
+    },
+    {
+      "identity" : "mjrefresh",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CoderMJLee/MJRefresh",
+      "state" : {
+        "revision" : "535d39c86e592d73f8b8e75f9bf1eda62ca4a4ce",
+        "version" : "3.7.9"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage",
+      "state" : {
+        "revision" : "10d06f6a33bafae8c164fbfd1f03391f6d4692b3",
+        "version" : "5.20.0"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "swiftmessages",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftKickMobile/SwiftMessages",
+      "state" : {
+        "revision" : "62e12e138fc3eedf88c7553dd5d98712aa119f40",
+        "version" : "9.0.9"
+      }
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON",
+      "state" : {
+        "revision" : "af76cf3ef710b6ca5f8c05f3a31307d44a3c5828",
+        "version" : "5.0.2"
+      }
+    },
+    {
+      "identity" : "toast-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitee.com/fandongtongxue_admin/Toast-Swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "0c9493eeacb102cc614da385cfaaf475379f4ab4"
+      }
+    }
+  ],
+  "version" : 3
 }

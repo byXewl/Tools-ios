@@ -55,7 +55,8 @@ class OCRViewController: BaseViewController, UIImagePickerControllerDelegate, UI
     
     lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
-        scrollView.contentSize = CGSize(width: 0, height: (CGFloat.screenW - 30) * 9 / 16 + 40 + 40 + 2 * 15 + CGFloat.safeAreaBottomHeight)
+        let height: CGFloat = (.screenW - 30) * 9 / 16 + 110 + .safeAreaBottomHeight
+        scrollView.contentSize = CGSize(width: 0, height: height)
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -CGFloat.safeAreaBottomHeight, right: 0)
         scrollView.showsVerticalScrollIndicator = false
         return scrollView

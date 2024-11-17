@@ -9,10 +9,12 @@ import UIKit
 import FDUIKit
 
 class InkePlayerViewController: BaseViewController {
-    
-    var player: PLPlayer?
-    
+        
     var data = InkeResponseModelData()
+    
+    var playerContext: QPlayerContext?
+    
+    var myRenderView: QRenderView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,25 +29,23 @@ class InkePlayerViewController: BaseViewController {
         }
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        player?.stop()
-    }
-    
 
     func initPlayer(){
-        let option = PLPlayerOption.default()
-        option.setOptionValue(15, forKey:PLPlayerOptionKeyTimeoutIntervalForMediaPackets)
-        option.setOptionValue(2000, forKey:PLPlayerOptionKeyMaxL1BufferDuration)
-        option.setOptionValue(1000, forKey:PLPlayerOptionKeyMaxL2BufferDuration)
-        option.setOptionValue(false, forKey:PLPlayerOptionKeyVideoToolbox)
-        option.setOptionValue(3, forKey:PLPlayerOptionKeyLogLevel)
-        
-        player = PLPlayer(url: URL(string: data.live_info.stream_addr), option: option)
-//        player?.delegate = self
-        player?.playerView?.contentMode = .scaleAspectFill
-        view.addSubview((player?.playerView)!)
-        player?.play()
+        let documentsDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last
+        playerContext = QPlayerContext(playerAPPVersion: "1.0.0", localStorageDir: documentsDir!, logLevel: .LOG_VERBOSE)
+        myRenderView = QRenderView(frame: view.bounds)
+        myRenderView!.attach(playerContext!)
+        view.addSubview(myRenderView!)
+        let modleBuilder = QMediaModelBuilder(isLive: true)
+        modleBuilder.addStreamElement(userType: "", urlType: .QURL_TYPE_QAUDIO_AND_VIDEO, url: data.live_info.stream_addr, quality: 1080, isSelected: true, backupUrl: "", referer: "", renderType: .QPLAYER_RENDER_TYPE_PLANE)
+        let model = modleBuilder.build()
+        playerContext!.controlHandler.playMediaModel(pmediaModel: model, startPos: 0)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        playerContext?.controlHandler.playerRelease()
+        playerContext = nil
     }
     
     @objc func closeBtnAction(){

@@ -127,7 +127,8 @@ class WiFiShareViewController: BaseViewController {
     
     lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
-        scrollView.contentSize = CGSize(width: 0, height: 40 * 3 + CGFloat.screenW - 30 + 3 * 15 + CGFloat.safeAreaBottomHeight)
+        let height: CGFloat = 135 + .screenW + .safeAreaBottomHeight
+        scrollView.contentSize = CGSize(width: 0, height: height)
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -CGFloat.safeAreaBottomHeight, right: 0)
         return scrollView
     }()

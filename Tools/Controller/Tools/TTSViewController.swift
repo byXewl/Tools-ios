@@ -169,7 +169,7 @@ class TTSViewController: BaseViewController {
     
     lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
-        scrollView.contentSize = CGSize(width: 0, height: 40 + 80 + 40 + 3 * 15 + CGFloat.safeAreaBottomHeight)
+        scrollView.contentSize = CGSize(width: 0, height: 205 + CGFloat.safeAreaBottomHeight)
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -CGFloat.safeAreaBottomHeight, right: 0)
         return scrollView
     }()
