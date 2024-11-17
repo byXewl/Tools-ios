@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007EC0122CEA3F8C00C07A20 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 007EC0112CEA3F8C00C07A20 /* Toast */; };
 		008737772CEA2BDF005635C2 /* FDFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 008737762CEA2BDF005635C2 /* FDFoundation */; };
 		0087377A2CEA2BF8005635C2 /* FDUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 008737792CEA2BF8005635C2 /* FDUIKit */; };
 		0087377D2CEA2C10005635C2 /* FDNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 0087377C2CEA2C10005635C2 /* FDNetwork */; };
@@ -85,7 +86,6 @@
 		04D0E40A264CB08400E45843 /* WebpageShotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0E409264CB08400E45843 /* WebpageShotViewController.swift */; };
 		04D0E40D264CB22200E45843 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0E40C264CB22200E45843 /* WebViewController.swift */; };
 		C47583F6C3F2A3BE706D9B1A /* Pods_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBFA974C002928DC16962E7 /* Pods_Tools.framework */; };
-		CB2D68412738162B0016F247 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = CB2D68402738162B0016F247 /* Toast */; };
 		CB2D68432738170F0016F247 /* AwemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D68422738170F0016F247 /* AwemeModel.swift */; };
 		CB2D6845273817A10016F247 /* AwemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D6844273817A10016F247 /* AwemeViewController.swift */; };
 		CB422BE326C3F82C0090D9FA /* CurrencyConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB422BE226C3F82C0090D9FA /* CurrencyConverterViewController.swift */; };
@@ -187,12 +187,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2D68412738162B0016F247 /* Toast in Frameworks */,
 				008737772CEA2BDF005635C2 /* FDFoundation in Frameworks */,
 				0494207F262FB44A0088ADCE /* CloudKit.framework in Frameworks */,
 				008737802CEA2E08005635C2 /* HandyJSON in Frameworks */,
 				0087377A2CEA2BF8005635C2 /* FDUIKit in Frameworks */,
 				0087377D2CEA2C10005635C2 /* FDNetwork in Frameworks */,
+				007EC0122CEA3F8C00C07A20 /* Toast in Frameworks */,
 				C47583F6C3F2A3BE706D9B1A /* Pods_Tools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,11 +410,11 @@
 			);
 			name = Tools;
 			packageProductDependencies = (
-				CB2D68402738162B0016F247 /* Toast */,
 				008737762CEA2BDF005635C2 /* FDFoundation */,
 				008737792CEA2BF8005635C2 /* FDUIKit */,
 				0087377C2CEA2C10005635C2 /* FDNetwork */,
 				0087377F2CEA2E08005635C2 /* HandyJSON */,
+				007EC0112CEA3F8C00C07A20 /* Toast */,
 			);
 			productName = Tools;
 			productReference = 048D595326251F8100628F78 /* Tools.app */;
@@ -445,11 +445,11 @@
 			);
 			mainGroup = 048D594A26251F8100628F78;
 			packageReferences = (
-				CB2D683F2738162B0016F247 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 				008737752CEA2BDF005635C2 /* XCRemoteSwiftPackageReference "FDFoundation" */,
 				008737782CEA2BF8005635C2 /* XCRemoteSwiftPackageReference "FDUIKit" */,
 				0087377B2CEA2C10005635C2 /* XCRemoteSwiftPackageReference "FDNetwork" */,
 				0087377E2CEA2E08005635C2 /* XCRemoteSwiftPackageReference "HandyJSON" */,
+				007EC0102CEA3F8C00C07A20 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = 048D595426251F8100628F78 /* Products */;
 			projectDirPath = "";
@@ -857,6 +857,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		007EC0102CEA3F8C00C07A20 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 		008737752CEA2BDF005635C2 /* XCRemoteSwiftPackageReference "FDFoundation" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/fandongtongxue/FDFoundation";
@@ -889,17 +897,14 @@
 				kind = branch;
 			};
 		};
-		CB2D683F2738162B0016F247 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitee.com/fandongtongxue_admin/Toast-Swift.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		007EC0112CEA3F8C00C07A20 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 007EC0102CEA3F8C00C07A20 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
 		008737762CEA2BDF005635C2 /* FDFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 008737752CEA2BDF005635C2 /* XCRemoteSwiftPackageReference "FDFoundation" */;
@@ -919,11 +924,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0087377E2CEA2E08005635C2 /* XCRemoteSwiftPackageReference "HandyJSON" */;
 			productName = HandyJSON;
-		};
-		CB2D68402738162B0016F247 /* Toast */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CB2D683F2738162B0016F247 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
-			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

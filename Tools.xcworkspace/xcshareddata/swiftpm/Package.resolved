@@ -1,5 +1,5 @@
 {
-  "originHash" : "c9830ef773c3f33274afb58d5e6534b3346738e83234a15096b377884f934078",
+  "originHash" : "633a9d14edafdcb1a863e2d975ece0acffa7ed753a40b8ec2f0596e83d3ba1da",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -112,10 +112,10 @@
     {
       "identity" : "toast-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://gitee.com/fandongtongxue_admin/Toast-Swift.git",
+      "location" : "https://github.com/scalessec/Toast-Swift.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "0c9493eeacb102cc614da385cfaaf475379f4ab4"
+        "revision" : "ddccd20d6fb718448d9b179c454c561653fda7d5",
+        "version" : "5.1.1"
       }
     }
   ],
