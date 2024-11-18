@@ -12,10 +12,6 @@ class InkePlayerViewController: BaseViewController {
         
     var data = InkeResponseModelData()
     
-    var playerContext: QPlayerContext?
-    
-    var myRenderView: QRenderView?
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,21 +27,11 @@ class InkePlayerViewController: BaseViewController {
     
 
     func initPlayer(){
-        let documentsDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last
-        playerContext = QPlayerContext(playerAPPVersion: "1.0.0", localStorageDir: documentsDir!, logLevel: .LOG_VERBOSE)
-        myRenderView = QRenderView(frame: view.bounds)
-        myRenderView!.attach(playerContext!)
-        view.addSubview(myRenderView!)
-        let modleBuilder = QMediaModelBuilder(isLive: true)
-        modleBuilder.addStreamElement(userType: "", urlType: .QURL_TYPE_QAUDIO_AND_VIDEO, url: data.live_info.stream_addr, quality: 1080, isSelected: true, backupUrl: "", referer: "", renderType: .QPLAYER_RENDER_TYPE_PLANE)
-        let model = modleBuilder.build()
-        playerContext!.controlHandler.playMediaModel(pmediaModel: model, startPos: 0)
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        playerContext?.controlHandler.playerRelease()
-        playerContext = nil
     }
     
     @objc func closeBtnAction(){
@@ -60,7 +46,3 @@ class InkePlayerViewController: BaseViewController {
     }()
 
 }
-
-//extension InkePlayerViewController: PLPlayerDelegate{
-//
-//}

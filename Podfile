@@ -18,9 +18,6 @@ target 'Tools' do
   pod 'ZFPlayer'
   pod 'ZFPlayer/ControlView'
   pod 'ZFPlayer/ijkplayer'
-  
-  pod 'qplayer2-core', '1.5.0'
-
 
 end
 post_install do |installer|
