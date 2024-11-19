@@ -7,7 +7,7 @@ target 'Tools' do
   # Pods for Tools
   pod "MarkdownView"
   pod 'UnsplashPhotoPicker', '~> 1.1.1'
-  pod "SwViewCapture"
+  pod "SwViewCapture", :git=>'https://github.com/startry/SwViewCapture.git'
   pod 'Eureka'
 
   pod 'Firebase/Analytics'

@@ -121,7 +121,7 @@ DEPENDENCIES:
   - Firebase/Crashlytics
   - Google-Mobile-Ads-SDK
   - MarkdownView
-  - SwViewCapture
+  - SwViewCapture (from `https://github.com/startry/SwViewCapture.git`)
   - UnsplashPhotoPicker (~> 1.1.1)
   - ZFPlayer
   - ZFPlayer/ControlView
@@ -145,9 +145,17 @@ SPEC REPOS:
     - MarkdownView
     - nanopb
     - PromisesObjC
-    - SwViewCapture
     - UnsplashPhotoPicker
     - ZFPlayer
+
+EXTERNAL SOURCES:
+  SwViewCapture:
+    :git: https://github.com/startry/SwViewCapture.git
+
+CHECKOUT OPTIONS:
+  SwViewCapture:
+    :commit: 21f3db2998a03a8354b6b6b7f0e6790507349f0c
+    :git: https://github.com/startry/SwViewCapture.git
 
 SPEC CHECKSUMS:
   Eureka: 60cf058f86a8fb3ed26165ba5292b9850361b0a6
@@ -166,10 +174,10 @@ SPEC CHECKSUMS:
   MarkdownView: 22249778219cc22901f1454e8355298dd0bda7f0
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
-  SwViewCapture: edf1ea74e164f47af005fbdfdc6fc18ec373ec69
+  SwViewCapture: 19a83a3e6993935690fe605a39c0aa474d7919f1
   UnsplashPhotoPicker: 86520e34cfded8fb4a41910bf87afe571906b4e3
   ZFPlayer: 624c92de06eb34df322c3b53b4c9ce760f528f7a
 
-PODFILE CHECKSUM: 496c1d4beb1ce986e3a27057ef689eb3b75c7f06
+PODFILE CHECKSUM: b09669fc3cc07ce7b39d0c2776e4dec38bb4e1c9
 
 COCOAPODS: 1.16.2
