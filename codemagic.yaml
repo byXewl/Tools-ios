@@ -1,0 +1,9 @@
+workflows:
+  unsigned-build:
+    name: Unsigned Debug Build
+    environment:
+      xcode: 15.4
+    scripts:
+      - flutter build ios --release --no-codesign   # 关键：--no-codesign
+    artifacts:
+      - build/ios/iphoneos/Runner.app.zip
