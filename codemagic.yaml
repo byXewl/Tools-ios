@@ -2,25 +2,28 @@ workflows:
   unsigned-swift-build:
     name: Unsigned Swift Build
     environment:
-      xcode: 15.4                # 按需要改版本
-      cocoapods: default         # 如项目用 CocoaPods
+      xcode: 15.4
     scripts:
-      - name: Pod install (如有)
+      - name: Resolve SPM & Pods
         script: |
+          # 如果用 CocoaPods
           [ -f Podfile ] && pod install --repo-update
+          # 拉取 SPM 依赖
+          xcodebuild -resolvePackageDependencies -workspace Tools.xcworkspace -scheme Tools
       - name: Build .app (Release, 无签名)
         script: |
-          xcodebuild \
+          xcodebuild archive \
             -workspace Tools.xcworkspace \
             -scheme Tools \
             -configuration Release \
-            -derivedDataPath build/DerivedData \
+            -archivePath build/ios/Tools.xcarchive \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            PROVISIONING_PROFILE_SPECIFIER="" \
-            -sdk iphoneos \
-            -arch arm64 \
-            CONFIGURATION_BUILD_DIR=build/ios/iphoneos
+            PROVISIONING_PROFILE_SPECIFIER=""
+      - name: Export .app 目录
+        script: |
+          cp -R build/ios/Tools.xcarchive/Products/Applications/Tools.app build/ios/iphoneos/
+          cd build/ios/iphoneos && zip -r Tools.app.zip Tools.app
     artifacts:
       - build/ios/iphoneos/*.app.zip
