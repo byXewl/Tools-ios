@@ -11,8 +11,8 @@ workflows:
       - name: Build .app (Release, 无签名)
         script: |
           xcodebuild \
-            -workspace YourApp.xcworkspace \   # 如果用 .xcodeproj 改成 -project YourApp.xcodeproj
-            -scheme YourApp \
+            -workspace Tools.xcworkspace \   # 如果用 .xcodeproj 改成 -project YourApp.xcodeproj
+            -scheme Tools \
             -configuration Release \
             -derivedDataPath build/DerivedData \
             CODE_SIGNING_ALLOWED=NO \
