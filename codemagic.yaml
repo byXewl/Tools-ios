@@ -10,9 +10,9 @@ workflows:
           [ -f Podfile ] && pod install --repo-update
           # 拉取 SPM 依赖
           xcodebuild -resolvePackageDependencies -workspace Tools.xcworkspace -scheme Tools
-    - name: Build .app（Release，无签名）
+    - name: Build .app
       script: |
-        # 1. 先 archive（产物在当前工作目录）
+        # 1. 先 archive
         xcodebuild archive \
           -workspace Tools.xcworkspace \
           -scheme Tools \
