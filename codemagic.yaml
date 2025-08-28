@@ -31,4 +31,4 @@ workflows:
           cd build/ios
           zip -r Tools.app.zip Tools.app
     artifacts:
-      - build/ios/iphoneos/*.app.zip
+      - build/ios/Tools.app.zip
