@@ -11,7 +11,7 @@ workflows:
       - name: Build .app (Release, 无签名)
         script: |
           xcodebuild \
-            -workspace Tools.xcworkspace \   # 如果用 .xcodeproj 改成 -project YourApp.xcodeproj
+            -workspace Tools.xcworkspace \
             -scheme Tools \
             -configuration Release \
             -derivedDataPath build/DerivedData \
