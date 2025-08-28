@@ -10,9 +10,8 @@ workflows:
           [ -f Podfile ] && pod install --repo-update
           # 拉取 SPM 依赖
           xcodebuild -resolvePackageDependencies -workspace Tools.xcworkspace -scheme Tools
-      - name: Build .app
+      - name: Build .app (Release, 无签名)
         script: |
-          # 1. 先 archive
           xcodebuild archive \
             -workspace Tools.xcworkspace \
             -scheme Tools \
@@ -22,8 +21,7 @@ workflows:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
             PROVISIONING_PROFILE_SPECIFIER=""
-
-      - name: 导出 .app 并打包
+      - name: Export .app
         script: |
           # 2. 用 xcodebuild 把 archive 解开到指定目录
           xcodebuild -exportArchive \
