@@ -1,9 +1,26 @@
 workflows:
-  unsigned-build:
-    name: Unsigned Debug Build
+  unsigned-swift-build:
+    name: Unsigned Swift Build
     environment:
-      xcode: 15.4
+      xcode: 15.4                # 按需要改版本
+      cocoapods: default         # 如项目用 CocoaPods
     scripts:
-      - flutter build ios --release --no-codesign   # 关键：--no-codesign
+      - name: Pod install (如有)
+        script: |
+          [ -f Podfile ] && pod install --repo-update
+      - name: Build .app (Release, 无签名)
+        script: |
+          xcodebuild \
+            -workspace YourApp.xcworkspace \   # 如果用 .xcodeproj 改成 -project YourApp.xcodeproj
+            -scheme YourApp \
+            -configuration Release \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            PROVISIONING_PROFILE_SPECIFIER="" \
+            -sdk iphoneos \
+            -arch arm64 \
+            CONFIGURATION_BUILD_DIR=build/ios/iphoneos
     artifacts:
-      - build/ios/iphoneos/Runner.app.zip
+      - build/ios/iphoneos/*.app.zip
