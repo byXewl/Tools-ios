@@ -10,27 +10,27 @@ workflows:
           [ -f Podfile ] && pod install --repo-update
           # 拉取 SPM 依赖
           xcodebuild -resolvePackageDependencies -workspace Tools.xcworkspace -scheme Tools
-    - name: Build .app
-      script: |
-        # 1. 先 archive
-        xcodebuild archive \
-          -workspace Tools.xcworkspace \
-          -scheme Tools \
-          -configuration Release \
-          -archivePath build/Tools.xcarchive \
-          CODE_SIGNING_ALLOWED=NO \
-          CODE_SIGNING_REQUIRED=NO \
-          CODE_SIGN_IDENTITY="" \
-          PROVISIONING_PROFILE_SPECIFIER=""
+      - name: Build .app
+        script: |
+          # 1. 先 archive
+          xcodebuild archive \
+            -workspace Tools.xcworkspace \
+            -scheme Tools \
+            -configuration Release \
+            -archivePath build/Tools.xcarchive \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            PROVISIONING_PROFILE_SPECIFIER=""
 
-    - name: 导出 .app 并打包
-      script: |
-        # 2. 用 xcodebuild 把 archive 解开到指定目录
-        xcodebuild -exportArchive \
-          -archivePath build/Tools.xcarchive \
-          -exportPath build/ios \
-          -exportOptionsPlist ios/ExportOptions.plist
-        # 3. 此时 build/ios 下会生成 Tools.app
-        cd build/ios && zip -r Tools.app.zip Tools.app
+      - name: 导出 .app 并打包
+        script: |
+          # 2. 用 xcodebuild 把 archive 解开到指定目录
+          xcodebuild -exportArchive \
+            -archivePath build/Tools.xcarchive \
+            -exportPath build/ios \
+            -exportOptionsPlist ios/ExportOptions.plist
+          # 3. 此时 build/ios 下会生成 Tools.app
+          cd build/ios && zip -r Tools.app.zip Tools.app
     artifacts:
       - build/ios/iphoneos/*.app.zip
