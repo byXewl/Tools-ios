@@ -13,23 +13,21 @@ workflows:
       - name: Build .app (Release, 无签名)
         script: |
           xcodebuild archive \
-            -workspace Tools.xcworkspace \
-            -scheme Tools \
-            -configuration Release \
-            -archivePath build/ios/Tools.xcarchive \
-            CODE_SIGNING_ALLOWED=NO \
-            CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGN_IDENTITY="" \
-            PROVISIONING_PROFILE_SPECIFIER=""
+                -workspace Tools.xcworkspace \
+                -scheme Tools \
+                -configuration Release \
+                -archivePath "$PWD/build/Tools.xcarchive" \
+                CODE_SIGNING_ALLOWED=NO \
+                CODE_SIGNING_REQUIRED=NO \
+                CODE_SIGN_IDENTITY="" \
+                PROVISIONING_PROFILE_SPECIFIER=""
       - name: Export .app 并打包
         script: |
-          # 1. 用官方命令把 archive 解成 .app
           xcodebuild -exportArchive \
-            -archivePath build/Tools.xcarchive \
-            -exportPath build/ios \
+            -archivePath "$PWD/build/Tools.xcarchive" \
+            -exportPath "$PWD/build/ios" \
             -exportOptionsPlist ios/ExportOptions.plist
 
-          # 2. 此时 build/ios 里会生成 Tools.app
           cd build/ios
           zip -r Tools.app.zip Tools.app
     artifacts:
